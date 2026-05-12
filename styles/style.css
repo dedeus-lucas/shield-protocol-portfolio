@@ -341,3 +341,91 @@ body::after {
   }
 
 }
+
+/* ABOUT SECTION */
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-xl);
+}
+
+.about-intro {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-md);
+
+  max-width: 720px;
+}
+
+.section-label {
+  width: fit-content;
+
+  padding:
+    0.45rem 0.9rem;
+
+  border-radius: 999px;
+
+  background:
+    rgba(139, 92, 246, 0.08);
+
+  border:
+    1px solid rgba(139, 92, 246, 0.18);
+
+  color:
+    var(--color-primary-light);
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+}
+
+.about-description {
+  font-size: 1.05rem;
+}
+
+.about-grid {
+  display: grid;
+
+  gap: var(--space-lg);
+}
+
+.about-card {
+  padding: 2rem;
+
+  transition:
+    transform var(--transition-default),
+    border var(--transition-default);
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+
+  border:
+    1px solid rgba(139, 92, 246, 0.22);
+}
+
+.about-card-title {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  color: var(--color-text-primary);
+}
+
+/* ABOUT DESKTOP */
+
+@media (min-width: 900px) {
+
+  .about-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}
