@@ -213,8 +213,11 @@
 
           <div class="hero-visual glass-card">
             <img
-              src="./assets/backgrounds/hero-secure-systems.png"
+              src="./assets/backgrounds/hero-secure-systems.webp"
               alt="Secure Systems Visualization"
+              width="900"
+              height="700"
+              fetchpriority="high"
             />
           </div>
         </section>
@@ -291,8 +294,11 @@
             <div class="projects-showcase glass-card">
               <div class="projects-image">
                 <img
-                  src="./assets/backgrounds/projects-labs-background.png"
+                  src="./assets/backgrounds/projects-labs-background.webp"
                   alt="Projects Architecture Visualization"
+                  loading="lazy"
+                  width="900"
+                  height="700"
                 />
               </div>
 
@@ -430,6 +436,18 @@
       <!-- FOOTER -->
 
       <footer class="footer" id="contact">
+        <div class="footer-background">
+          <img
+            src="./assets/backgrounds/footer-cyber-city.webp"
+            alt="Cyber City Atmosphere"
+            loading="lazy"
+            width="1920"
+            height="1080"
+          />
+        </div>
+
+        <div class="footer-overlay"></div>
+
         <div class="footer-content container">
 
           <span class="section-label">
@@ -466,7 +484,17 @@
             >
               LinkedIn
             </a>
+
           </div>
+
+          <div class="footer-bottom">
+            <p>
+              © <span id="current-year"></span>
+              Shield Protocol.
+              Todos os direitos reservados.
+            </p>
+          </div>
+
         </div>
       </footer>
 

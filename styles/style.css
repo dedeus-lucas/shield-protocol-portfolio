@@ -1,5 +1,5 @@
 /* =========================================================
-   1. GLOBAL
+    1. GLOBAL
 ========================================================= */
 
 html {
@@ -8,66 +8,46 @@ html {
 
 body {
   position: relative;
-
-  background:
-    linear-gradient(rgba(6, 7, 10, 0.82),
-      rgba(6, 7, 10, 0.92)),
-    url('../assets/backgrounds/hero-background.png');
-
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
   overflow-x: hidden;
+  background:
+    radial-gradient(circle at top,
+      rgba(139, 92, 246, 0.08),
+      transparent 35%),
+    #0b0d12;
 }
 
 body::before {
   content: '';
-
   position: fixed;
   inset: 0;
-
   background:
-    linear-gradient(rgba(255, 255, 255, 0.015) 1px,
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px,
       transparent 1px),
     linear-gradient(90deg,
-      rgba(255, 255, 255, 0.015) 1px,
+      rgba(255, 255, 255, 0.025) 1px,
       transparent 1px);
-
   background-size: 80px 80px;
-
   pointer-events: none;
-
   z-index: -2;
 }
 
 body::after {
   content: '';
-
   position: fixed;
-
   top: -20%;
   left: 50%;
-
   width: 700px;
   height: 700px;
-
   transform: translateX(-50%);
-
   background:
-    rgba(139, 92, 246, 0.15);
-
+    rgba(139, 92, 246, 0.24);
   filter: blur(140px);
-
   pointer-events: none;
-
   z-index: -3;
 }
 
 a,
 button,
-img,
-span,
 article,
 div {
   transition:
@@ -79,8 +59,13 @@ div {
     box-shadow var(--transition-default);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* =========================================================
-   2. UTILITIES
+    2. UTILITIES
 ========================================================= */
 
 .section {
@@ -94,21 +79,15 @@ div {
 
 .section-label {
   width: fit-content;
-
   padding:
     0.6rem 1.1rem;
-
   border-radius: 999px;
-
   background:
     rgba(139, 92, 246, 0.08);
-
   border:
     1px solid rgba(139, 92, 246, 0.18);
-
   color:
     var(--color-primary-light);
-
   font-size: 0.84rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -116,103 +95,77 @@ div {
 
 .glass-card {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.045),
-      rgba(255, 255, 255, 0.02));
-
+    linear-gradient(rgba(255, 255, 255, 0.065),
+      rgba(255, 255, 255, 0.03));
   border:
     1px solid rgba(255, 255, 255, 0.08);
-
   backdrop-filter:
     var(--blur-glass);
-
   box-shadow:
     0 10px 40px rgba(0, 0, 0, 0.22);
-
   border-radius:
     var(--radius-lg);
 }
 
 /* =========================================================
-   3. NAVBAR
+    3. NAVBAR
 ========================================================= */
 
 .navbar {
   display: flex;
-
   align-items: center;
   justify-content: space-between;
-
   max-width: 1280px;
-
   margin: 0 auto;
-
   padding:
     1rem 1.4rem;
-
   border:
     1px solid rgba(255, 255, 255, 0.06);
-
   border-radius: 18px;
-
   background:
-    rgba(10, 12, 18, 0.55);
-
+    rgba(14, 16, 24, 0.48);
   backdrop-filter:
     blur(18px);
-
   box-shadow:
     0 8px 30px rgba(0, 0, 0, 0.18);
 }
 
 .navbar-scrolled .navbar {
   background:
-    rgba(8, 10, 16, 0.82);
-
+    rgba(14, 16, 24, 0.82);
   border:
     1px solid rgba(139, 92, 246, 0.12);
-
   box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.28);
 }
 
 .navbar-wrapper {
   position: fixed;
-
   top: 0;
   left: 0;
-
   width: 100%;
-
   z-index: 1000;
-
   padding:
     1rem 0;
-
   background:
     linear-gradient(rgba(6, 7, 10, 0.72),
       rgba(6, 7, 10, 0.18));
-
   backdrop-filter:
     blur(18px);
-
   border-bottom:
     1px solid rgba(255, 255, 255, 0.04);
 }
 
 .navbar-brand {
   display: flex;
-
   align-items: center;
-
   gap: 1rem;
 }
 
 .navbar-logo {
   width: 56px;
   height: 56px;
-
   object-fit: contain;
-
   filter:
     drop-shadow(0 0 12px rgba(139, 92, 246, 0.35));
 }
@@ -225,34 +178,27 @@ div {
 .navbar-title {
   font-size: 1rem;
   font-weight: 700;
-
   color:
     var(--color-text-primary);
 }
 
 .navbar-subtitle {
   font-size: 0.84rem;
-
   letter-spacing: 0.08em;
-
   color:
     var(--color-text-secondary);
 }
 
 .navbar-links {
   display: flex;
-
   align-items: center;
-
   gap: 2rem;
 }
 
 .navbar-links a {
   position: relative;
-
   color:
     var(--color-text-secondary);
-
   font-weight: 500;
 }
 
@@ -264,21 +210,15 @@ div {
 
 .navbar-links a::after {
   content: '';
-
   position: absolute;
-
   left: 0;
   bottom: -6px;
-
   width: 100%;
   height: 1px;
-
   background:
     var(--color-primary-light);
-
   transform: scaleX(0);
   transform-origin: left;
-
   transition:
     transform var(--transition-default);
 }
@@ -289,156 +229,109 @@ div {
 }
 
 /* =========================================================
-   4. HERO
+    4. HERO
 ========================================================= */
 
 .hero {
   position: relative;
-
   overflow: hidden;
-
-  padding-bottom: var(--space-xl);
-}
-
-.hero::after {
-  content: '';
-
-  position: absolute;
-
-  left: 0;
-  right: 0;
-  bottom: -1px;
-
-  height: 180px;
-
+  padding-bottom: 4rem;
   background:
-    linear-gradient(transparent,
-      rgba(6, 7, 10, 1));
-
-  pointer-events: none;
+    linear-gradient(rgba(10, 12, 18, 0.18),
+      rgba(10, 12, 18, 0.04));
 }
 
 .hero-background-glow {
   position: absolute;
-
   top: -200px;
   right: -150px;
-
   width: 500px;
   height: 500px;
-
   border-radius: 50%;
-
   background:
     radial-gradient(circle,
       rgba(139, 92, 246, 0.22) 0%,
       rgba(139, 92, 246, 0.08) 35%,
       transparent 70%);
-
   filter: blur(60px);
-
   z-index: -1;
 }
 
 .hero-content {
   display: grid;
-
   align-items: center;
-
   gap: clamp(3rem, 6vw, 6rem);
-
   padding-top: 9rem;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-
   gap: var(--space-md);
 }
 
 .hero-badge {
   width: fit-content;
-
   padding:
     0.5rem 1rem;
-
   border:
     1px solid rgba(139, 92, 246, 0.25);
-
   border-radius: 999px;
-
   background:
     rgba(139, 92, 246, 0.08);
-
   color:
     var(--color-primary-light);
-
   font-size: 0.9rem;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-
   gap: 1rem;
-
   margin-top: var(--space-sm);
 }
 
 .hero-visual {
   overflow: hidden;
-
   padding: 1rem;
-
   border:
     1px solid rgba(139, 92, 246, 0.12);
 }
 
 .hero-visual img {
   display: block;
-
   width: 100%;
   height: auto;
-
   border-radius:
     var(--radius-md);
-
   opacity: 0.92;
-
   filter:
     saturate(1.05) contrast(1.02);
-
   transform:
     scale(1.01);
+  will-change: transform;
 }
 
 /* =========================================================
-   5. BUTTONS
+    5. BUTTONS
 ========================================================= */
 
 .primary-button,
 .secondary-button {
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
-
   padding:
     0.9rem 1.4rem;
-
   border-radius:
     var(--radius-md);
-
   font-weight: 600;
 }
 
 .primary-button {
   background:
     var(--color-primary);
-
   color: white;
-
   box-shadow:
     var(--glow-primary);
 }
@@ -446,28 +339,26 @@ div {
 .secondary-button {
   border:
     1px solid var(--color-border);
-
   background:
     rgba(255, 255, 255, 0.03);
 }
 
 /* =========================================================
-   6. ABOUT
+    6. ABOUT
 ========================================================= */
 
 .about {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-
   gap: var(--space-xl);
 }
 
 .about-intro {
   display: flex;
   flex-direction: column;
-
   gap: var(--space-md);
-
   max-width: 720px;
 }
 
@@ -477,9 +368,7 @@ div {
 
 .about-grid {
   display: grid;
-
   gap: var(--space-lg);
-
   grid-template-columns:
     repeat(auto-fit, minmax(260px, 1fr));
 }
@@ -490,18 +379,15 @@ div {
 
 .about-card-title {
   display: inline-block;
-
   margin-bottom: 1rem;
-
   font-size: 1.1rem;
   font-weight: 700;
-
   color:
     var(--color-text-primary);
 }
 
 /* =========================================================
-   7. PROJECTS
+    7. PROJECTS
 ========================================================= */
 
 .projects {
@@ -511,9 +397,7 @@ div {
 .projects-header {
   display: flex;
   flex-direction: column;
-
   gap: 1.5rem;
-
   margin-bottom: 5rem;
 }
 
@@ -523,22 +407,18 @@ div {
 
 .projects-showcase {
   display: grid;
-
   overflow: hidden;
 }
 
 .projects-image {
   position: relative;
-
   min-height: 320px;
 }
 
 .projects-image::after {
   content: '';
-
   position: absolute;
   inset: 0;
-
   background:
     linear-gradient(rgba(6, 7, 10, 0.05),
       rgba(6, 7, 10, 0.45));
@@ -547,36 +427,27 @@ div {
 .projects-image img {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
 }
 
 .projects-content {
   display: flex;
   flex-direction: column;
-
   gap: var(--space-md);
-
   padding: 2rem;
 }
 
 .project-badge {
   width: fit-content;
-
   padding:
     0.45rem 0.9rem;
-
   border-radius: 999px;
-
   background:
     rgba(139, 92, 246, 0.08);
-
   border:
     1px solid rgba(139, 92, 246, 0.18);
-
   color:
     var(--color-primary-light);
-
   font-size: 0.84rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -585,45 +456,36 @@ div {
 .projects-stack {
   display: flex;
   flex-wrap: wrap;
-
   gap: 0.8rem;
 }
 
 .projects-stack span {
   padding:
     0.55rem 1rem;
-
   border-radius: 999px;
-
   background:
     rgba(255, 255, 255, 0.04);
-
   border:
     1px solid rgba(255, 255, 255, 0.06);
-
   color:
     var(--color-text-secondary);
-
   font-size: 0.85rem;
 }
 
 /* =========================================================
-   8. JOURNEY
+    8. JOURNEY
 ========================================================= */
 
 .journey {
   display: flex;
   flex-direction: column;
-
   gap: var(--space-xl);
 }
 
 .journey-header {
   display: flex;
   flex-direction: column;
-
   gap: 1.5rem;
-
   max-width: 720px;
 }
 
@@ -633,32 +495,24 @@ div {
 
 .journey-timeline {
   display: grid;
-
   gap: var(--space-lg);
-
   grid-template-columns:
     repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .journey-card {
   position: relative;
-
   overflow: hidden;
-
   padding: 2rem;
 }
 
 .journey-card::before {
   content: '';
-
   position: absolute;
-
   top: 0;
   left: 0;
-
   width: 4px;
   height: 100%;
-
   background:
     linear-gradient(to bottom,
       rgba(139, 92, 246, 0.9),
@@ -667,16 +521,12 @@ div {
 
 .journey-year {
   display: inline-block;
-
   margin-bottom: 1rem;
-
   color:
     var(--color-primary-light);
-
   font-size: 0.84rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-
   text-transform: uppercase;
 }
 
@@ -685,22 +535,19 @@ div {
 }
 
 /* =========================================================
-   9. STACK
+    9. STACK
 ========================================================= */
 
 .stack {
   display: flex;
   flex-direction: column;
-
   gap: var(--space-xl);
 }
 
 .stack-header {
   display: flex;
   flex-direction: column;
-
   gap: 1.5rem;
-
   max-width: 720px;
 }
 
@@ -710,9 +557,7 @@ div {
 
 .stack-grid {
   display: grid;
-
   gap: var(--space-lg);
-
   grid-template-columns:
     repeat(auto-fit, minmax(260px, 1fr));
 }
@@ -728,62 +573,83 @@ div {
 .stack-items {
   display: flex;
   flex-wrap: wrap;
-
   gap: 0.8rem;
 }
 
 .stack-items span {
   padding:
     0.6rem 1rem;
-
   border-radius: 999px;
-
   background:
     rgba(255, 255, 255, 0.04);
-
   border:
     1px solid rgba(255, 255, 255, 0.08);
-
   color:
     var(--color-text-secondary);
-
   font-size: 0.9rem;
 }
 
 /* =========================================================
-   10. FOOTER
+    10. FOOTER
 ========================================================= */
 
 .footer {
   position: relative;
-
   overflow: hidden;
-
   padding:
     6rem 0 3rem;
-
   background:
-    linear-gradient(rgba(6, 7, 10, 0.58),
-      rgba(6, 7, 10, 0.78)),
-    url('../assets/backgrounds/footer-cyber-city.png');
+    linear-gradient(rgba(10, 12, 18, 0.08),
+      rgba(10, 12, 18, 0.28));
+}
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.footer::before {
+  content: '';
+  position: absolute;
+  top: -140px;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background:
+    rgba(11, 13, 18, 0.92);
+  filter: blur(65px);
+  opacity: 0.85;
+  z-index: -2;
+}
+
+.footer-background {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  overflow: hidden;
+}
+
+.footer-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.52;
+  transform: scale(1.02);
+  opacity: 0.68;
+  filter:
+    saturate(1.08) contrast(1.08) brightness(0.95);
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color:
+    var(--color-text-secondary);
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-
   gap: var(--space-lg);
-
   padding-top: 7rem;
   padding-bottom: 7rem;
   padding-inline: 1rem;
-
   text-align: center;
 }
 
@@ -799,14 +665,12 @@ div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   gap: 1rem;
-
   margin-top: var(--space-sm);
 }
 
 /* =========================================================
-   11. INTERACTIONS
+    11. INTERACTIONS
 ========================================================= */
 
 .primary-button:hover,
@@ -850,11 +714,10 @@ footer {
 }
 
 /* =========================================================
-   12. RESPONSIVE
+    12. RESPONSIVE
 ========================================================= */
 
 @media (min-width: 900px) {
-
   .hero-content {
     grid-template-columns:
       1.1fr 1fr;
@@ -874,18 +737,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-
   .navbar {
     flex-direction: column;
-
     gap: 1.5rem;
   }
 
   .navbar-links {
     width: 100%;
-
     justify-content: center;
-
     flex-wrap: wrap;
   }
 }
