@@ -174,40 +174,47 @@
               />
 
               <div class="navbar-brand-text">
-                <span class="navbar-title"> Shield Protocol </span>
+                <span class="navbar-title" data-i18n="navbarTitle"> Shield Protocol </span>
 
-                <span class="navbar-subtitle">
-                  Engenharia de Sistemas Seguros
+                <span class="navbar-subtitle" data-i18n="navbarSubtitle">
+                  Portfólio de Engenharia de Sistemas Seguros
                 </span>
               </div>
             </div>
 
             <div class="navbar-links">
-              <a href="#projects"> Projetos </a>
+              <a href="#projects" data-i18n="navbarProjects"> Projetos </a>
 
-              <a href="#stack"> Stack </a>
+              <a href="#stack" data-i18n="navbarStack"> Stack </a>
 
-              <a href="#contact"> Contato </a>
+              <a href="#contact" data-i18n="navbarContact"> Contato </a>
             </div>
+
+            <button
+              class="language-toggle"
+              id="languageToggle"
+            >
+              EN
+            </button>
           </div>
         </nav>
 
         <section class="hero-content container">
           <div class="hero-text">
-            <span class="hero-badge"> ENGENHARIA DE SISTEMAS SEGUROS </span>
+            <span class="hero-badge" data-i18n="heroBadge"> ENGENHARIA DE SISTEMAS SEGUROS </span>
 
-            <h1>Engenharia Backend, Segurança em Cloud & Arquitetura Segura</h1>
+            <h1 data-i18n="heroTitle">Engenharia Backend, Segurança em Cloud & Arquitetura Segura</h1>
 
-            <p>
+            <p data-i18n="heroDescription">
               Bacharelando em Ciência da Computação com foco em Java,
               ecossistema Spring, segurança de APIs, DevSecOps e arquitetura
               segura.
             </p>
 
             <div class="hero-actions">
-              <a href="#" class="primary-button"> Ver Projetos </a>
+              <a href="#" class="primary-button" data-i18n="heroProjectsButton"> Ver Projetos </a>
 
-              <a href="https://github.com/dedeus-lucas" target="_blank" class="secondary-button"> GitHub </a>
+              <a href="https://github.com/dedeus-lucas" target="_blank" class="secondary-button" data-i18n="heroGitHubButton"> GitHub </a>
             </div>
           </div>
 
@@ -230,13 +237,13 @@
 
         <section class="about section container" id="about">
           <div class="about-intro">
-            <span class="section-label"> SOBRE </span>
+            <span class="section-label" data-i18n="aboutLabel"> SOBRE </span>
 
-            <h2 class="section-title">
+            <h2 class="section-title" data-i18n="aboutTitle">
               Construindo sistemas seguros com foco em engenharia e arquitetura.
             </h2>
 
-            <p class="about-description">
+            <p class="about-description" data-i18n="aboutDescription">
               Bacharelando em Ciência da Computação com foco em engenharia
               backend, segurança de APIs, cloud security e arquitetura
               escalável. Atualmente aprofundando conhecimentos em Java, Spring,
@@ -246,27 +253,27 @@
 
           <div class="about-grid">
             <article class="about-card glass-card">
-              <span class="about-card-title"> Engenharia Backend </span>
+              <span class="about-card-title" data-i18n="aboutBackendTitle"> Engenharia Backend </span>
 
-              <p>
+              <p data-i18n="aboutBackendDescription">
                 Java, Spring Boot, APIs REST, fluxos de autenticação e
                 arquitetura backend escalável.
               </p>
             </article>
 
             <article class="about-card glass-card">
-              <span class="about-card-title"> Cloud & Segurança </span>
+              <span class="about-card-title" data-i18n="aboutCloudSecurityTitle"> Cloud & Segurança </span>
 
-              <p>
+              <p data-i18n="aboutCloudSecurityDescription">
                 Identidade, segurança de APIs, conceitos de infraestrutura
                 segura e práticas DevSecOps.
               </p>
             </article>
 
             <article class="about-card glass-card">
-              <span class="about-card-title"> Aprendizado Contínuo </span>
+              <span class="about-card-title" data-i18n="aboutContinuousLearningTitle"> Aprendizado Contínuo </span>
 
-              <p>
+              <p data-i18n="aboutContinuousLearningDescription">
                 Aprofundando conhecimentos em Python, PHP, Linux, system design
                 e engenharia de segurança.
               </p>
@@ -279,13 +286,13 @@
         <section class="projects section" id="projects">
           <div class="container">
             <div class="projects-header">
-              <span class="section-label"> PROJETOS </span>
+              <span class="section-label" data-i18n="projectsLabel"> PROJETOS </span>
 
-              <h2 class="section-title">
+              <h2 class="section-title" data-i18n="projectsTitle">
                 Projetos, laboratórios e evolução técnica contínua.
               </h2>
 
-              <p class="projects-description">
+              <p class="projects-description" data-i18n="projectsDescription">
                 Construindo projetos voltados para backend, segurança,
                 arquitetura escalável e desenvolvimento orientado à engenharia.
               </p>
@@ -303,11 +310,11 @@
               </div>
 
               <div class="projects-content">
-                <span class="project-badge"> Em desenvolvimento </span>
+                <span class="project-badge" data-i18n="projectsBadge"> Em desenvolvimento </span>
 
                 <h3>Shield Protocol Labs</h3>
 
-                <p>
+                <p data-i18n="projectsDescription">
                   Ambiente contínuo de aprendizado, testes de arquitetura, APIs
                   seguras, automações, observabilidade e práticas DevSecOps.
                 </p>
@@ -328,13 +335,13 @@
 
         <section class="journey section container" id="journey">
           <div class="journey-header">
-            <span class="section-label"> JORNADA </span>
+            <span class="section-label" data-i18n="journeyLabel"> JORNADA </span>
 
-            <h2 class="section-title">
+            <h2 class="section-title" data-i18n="journeyTitle">
               Evolução contínua em engenharia e segurança.
             </h2>
 
-            <p class="journey-description">
+            <p class="journey-description" data-i18n="journeyDescription">
               Construindo conhecimento sólido em backend, cloud security,
               arquitetura escalável e desenvolvimento seguro.
             </p>
@@ -342,33 +349,33 @@
 
           <div class="journey-timeline">
             <article class="journey-card glass-card">
-              <span class="journey-year"> Atual </span>
+              <span class="journey-year" data-i18n="journeyCurrentYear"> Atual </span>
 
-              <h3>Engenharia Backend & Segurança</h3>
+              <h3 data-i18n="journeyCurrentTitle">Engenharia Backend & Segurança</h3>
 
-              <p>
+              <p data-i18n="journeyCurrentDescription">
                 Estudos voltados para Java, Spring Boot, APIs REST, autenticação
                 e arquitetura segura.
               </p>
             </article>
 
             <article class="journey-card glass-card">
-              <span class="journey-year"> Em evolução </span>
+              <span class="journey-year" data-i18n="journeyEvolutionYear"> Em evolução </span>
 
-              <h3>DevSecOps & Cloud</h3>
+              <h3 data-i18n="journeyEvolutionTitle">DevSecOps & Cloud</h3>
 
-              <p>
+              <p data-i18n="journeyEvolutionDescription">
                 Aprimorando conhecimentos em Linux, containers, observabilidade
                 e fundamentos DevSecOps.
               </p>
             </article>
 
             <article class="journey-card glass-card">
-              <span class="journey-year"> Expansão </span>
+              <span class="journey-year" data-i18n="journeyExpansionYear"> Expansão </span>
 
-              <h3>Python & PHP</h3>
+              <h3 data-i18n="journeyExpansionTitle">Python & PHP</h3>
 
-              <p>
+              <p data-i18n="journeyExpansionDescription">
                 Expandindo stack de desenvolvimento para automações, backend
                 complementar e ecossistemas web.
               </p>
@@ -380,13 +387,13 @@
 
         <section class="stack section container" id="stack">
           <div class="stack-header">
-            <span class="section-label"> STACK </span>
+            <span class="section-label" data-i18n="stackLabel"> STACK </span>
 
-            <h2 class="section-title">
+            <h2 class="section-title" data-i18n="stackTitle">
               Tecnologias, ferramentas e ecossistema de aprendizado.
             </h2>
 
-            <p class="stack-description">
+            <p class="stack-description" data-i18n="stackDescription">
               Construindo conhecimento sólido em backend, segurança, cloud e
               engenharia de software.
             </p>
@@ -394,7 +401,7 @@
 
           <div class="stack-grid">
             <article class="stack-card glass-card">
-              <h3>Backend</h3>
+              <h3 data-i18n="stackBackendTitle">Backend</h3>
 
               <div class="stack-items">
                 <span>Java</span>
@@ -407,7 +414,7 @@
             </article>
 
             <article class="stack-card glass-card">
-              <h3>Segurança & Cloud</h3>
+              <h3 data-i18n="stackSecurityCloudTitle">Segurança & Cloud</h3>
 
               <div class="stack-items">
                 <span>AWS</span>
@@ -419,7 +426,7 @@
             </article>
 
             <article class="stack-card glass-card">
-              <h3>Em evolução</h3>
+              <h3 data-i18n="stackEvolutionTitle">Em evolução</h3>
 
               <div class="stack-items">
                 <span>Python</span>
@@ -450,17 +457,17 @@
 
         <div class="footer-content container">
 
-          <span class="section-label">
+          <span class="section-label" data-i18n="footerContactLabel">
             CONTATO
           </span>
 
-          <h2 class="footer-title">
+          <h2 class="footer-title" data-i18n="footerContactTitle">
             Construindo conhecimento,
             projetos e evolução contínua
             em engenharia de software.
           </h2>
 
-          <p class="footer-description">
+          <p class="footer-description" data-i18n="footerContactDescription">
             Aberto para conexões profissionais,
             oportunidades,
             colaboração técnica
@@ -489,7 +496,7 @@
 
           <div class="footer-bottom">
             <p>
-              © <span id="current-year"></span>
+              © <span id="current-year" data-i18n="footerCurrentYear"></span>
               Shield Protocol.
               Todos os direitos reservados.
             </p>
@@ -498,6 +505,9 @@
         </div>
       </footer>
 
-    <script src="script.js"></script>
+    <script src="./languages/pt-br.js"></script>
+    <script src="./languages/en.js"></script>
+    <script src="./js/language.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
