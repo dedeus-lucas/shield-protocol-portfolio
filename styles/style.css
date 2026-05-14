@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   background:
@@ -8,6 +12,21 @@ body {
   background-position: center;
   background-attachment: fixed;
   overflow-x: hidden;
+}
+
+a,
+button,
+img,
+span,
+article,
+div {
+  transition:
+    background var(--transition-default),
+    border var(--transition-default),
+    color var(--transition-default),
+    transform var(--transition-default),
+    opacity var(--transition-default),
+    box-shadow var(--transition-default);
 }
 
 /* GLOBAL ATMOSPHERE */
@@ -46,10 +65,14 @@ body::after {
 /* GLASS EFFECT */
 
 .glass-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.045),
+      rgba(255, 255, 255, 0.02));
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: var(--blur-glass);
-  box-shadow: var(--shadow-soft);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.22);
   border-radius: var(--radius-lg);
 }
 
@@ -156,10 +179,10 @@ body::after {
   position: absolute;
   left: 0;
   bottom: -6px;
-  width: 100%;
+  width: 0%;
   height: 1px;
   background:
-    var(--color-primary);
+    var(--color-primary-light);
   transform: scaleX(0);
   transform-origin: left;
   transition:
@@ -167,7 +190,7 @@ body::after {
 }
 
 .navbar-links a:hover::after {
-  transform: scaleX(1);
+  width: 100%;
 }
 
 /* DESKTOP NAVBAR */
@@ -237,7 +260,10 @@ body::after {
 }
 
 .primary-button:hover {
-  transform: translateY(-2px);
+  transform:
+    translateY(-2px);
+  box-shadow:
+    0 12px 30px rgba(139, 92, 246, 0.35);
 }
 
 .secondary-button {
@@ -248,8 +274,10 @@ body::after {
 }
 
 .secondary-button:hover {
-  background:
-    rgba(255, 255, 255, 0.06);
+  transform:
+    translateY(-2px);
+  border:
+    1px solid rgba(139, 92, 246, 0.28);
 }
 
 /* HERO VISUAL */
@@ -266,6 +294,10 @@ body::after {
   display: block;
   width: 100%;
   height: auto;
+  filter:
+    saturate(1.05) contrast(1.02);
+  transform:
+    scale(1.01);
 }
 
 /* DESKTOP */
@@ -324,12 +356,6 @@ body::after {
   transition:
     transform var(--transition-default),
     border var(--transition-default);
-}
-
-.about-card:hover {
-  transform: translateY(-4px);
-  border:
-    1px solid rgba(139, 92, 246, 0.22);
 }
 
 .about-card-title {
@@ -676,4 +702,17 @@ body::after {
   .secondary-button {
     width: 100%;
   }
+}
+
+/* CARD HOVER EFFECTS */
+
+.about-card:hover,
+.journey-card:hover,
+.stack-card:hover {
+  transform:
+    translateY(-6px);
+  border:
+    1px solid rgba(139, 92, 246, 0.24);
+  box-shadow:
+    0 16px 40px rgba(139, 92, 246, 0.08);
 }
