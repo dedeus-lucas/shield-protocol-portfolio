@@ -131,8 +131,10 @@ img {
 }
 
 .navbar-scrolled .navbar {
+  padding: 0.5rem 0;
+  backdrop-filter: blur(18px);
   background:
-    rgba(14, 16, 24, 0.82);
+    rgba(6, 7, 10, 0.55);
   border:
     1px solid rgba(139, 92, 246, 0.12);
   box-shadow:
@@ -376,6 +378,23 @@ img {
   gap: var(--space-xl);
 }
 
+.about-header {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-photo {
+  overflow: hidden;
+  max-width: 420px;
+}
+
+.about-photo img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 .about-intro {
   display: flex;
   flex-direction: column;
@@ -405,6 +424,15 @@ img {
   font-weight: 700;
   color:
     var(--color-text-primary);
+}
+
+@media(min-width:900px) {
+
+  .about-header {
+    grid-template-columns:
+      420px 1fr;
+  }
+
 }
 
 /* =========================================================

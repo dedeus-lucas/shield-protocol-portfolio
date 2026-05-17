@@ -17,26 +17,30 @@ const enUS = {
 
   aboutLabel: "ABOUT",
 
-  aboutTitle:
-    "Building secure systems focused on engineering and architecture.",
+  aboutTitle: "Building engineering, security and continuous growth.",
 
-  aboutDescription:
-    "Computer Science student focused on backend engineering, API security, cloud security and scalable architecture. Currently expanding knowledge in Java, Spring, DevSecOps, Python and PHP.",
+  aboutDescription1:
+    "Computer Science student focused on backend engineering, API security, cloud security and scalable architecture.",
+
+  aboutDescription2:
+    "Building knowledge in Java, Spring, DevSecOps, Linux, cloud and secure development.",
+
+  aboutDescription3:
+    "Goal: build robust, secure and engineering-oriented systems.",
 
   aboutBackendTitle: "Backend Engineering",
 
   aboutBackendDescription:
-    "Java, Spring Boot, REST APIs, authentication flows and scalable backend architecture.",
+    "Java, Spring Boot, REST APIs and scalable architecture.",
 
-  aboutCloudSecurityTitle: "Cloud & Security",
+  aboutSecurityTitle: "Security & Cloud",
 
-  aboutCloudSecurityDescription:
-    "Identity, API security, secure infrastructure concepts and DevSecOps practices.",
+  aboutSecurityDescription: "API security, Cloud and DevSecOps practices.",
 
-  aboutContinuousLearningTitle: "Continuous Learning",
+  aboutLearningTitle: "Continuous Growth",
 
-  aboutContinuousLearningDescription:
-    "Expanding knowledge in Python, PHP, Linux, system design and security engineering.",
+  aboutLearningDescription:
+    "Continuous expansion in architecture, observability and engineering.",
 
   projectsLabel: "PROJECTS",
 

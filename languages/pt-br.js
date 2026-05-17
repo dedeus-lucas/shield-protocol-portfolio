@@ -17,26 +17,30 @@ const ptBR = {
 
   aboutLabel: "SOBRE",
 
-  aboutTitle:
-    "Construindo sistemas seguros com foco em engenharia e arquitetura.",
+  aboutTitle: "Construindo engenharia, segurança e evolução contínua.",
 
-  aboutDescription:
-    "Bacharelando em Ciência da Computação com foco em engenharia backend, segurança de APIs, cloud security e arquitetura escalável. Atualmente aprofundando conhecimentos em Java, Spring, DevSecOps, Python e PHP.",
+  aboutDescription1:
+    "Bacharelando em Ciência da Computação com foco em engenharia backend, segurança de APIs, cloud security e arquitetura escalável.",
+
+  aboutDescription2:
+    "Construindo conhecimento em Java, Spring, DevSecOps, Linux, cloud e desenvolvimento seguro.",
+
+  aboutDescription3:
+    "Objetivo: construir sistemas robustos, seguros e orientados à engenharia.",
 
   aboutBackendTitle: "Engenharia Backend",
 
   aboutBackendDescription:
-    "Java, Spring Boot, APIs REST, fluxos de autenticação e arquitetura backend escalável.",
+    "Java, Spring Boot, APIs REST e arquitetura escalável.",
 
-  aboutCloudSecurityTitle: "Cloud & Segurança",
+  aboutSecurityTitle: "Segurança & Cloud",
 
-  aboutCloudSecurityDescription:
-    "Identidade, segurança de APIs, conceitos de infraestrutura segura e práticas DevSecOps.",
+  aboutSecurityDescription: "Segurança de APIs, Cloud e práticas DevSecOps.",
 
-  aboutContinuousLearningTitle: "Aprendizado Contínuo",
+  aboutLearningTitle: "Evolução Contínua",
 
-  aboutContinuousLearningDescription:
-    "Aprofundando conhecimentos em Python, PHP, Linux, system design e engenharia de segurança.",
+  aboutLearningDescription:
+    "Expansão contínua em arquitetura, observabilidade e engenharia.",
 
   projectsLabel: "PROJETOS",
 
