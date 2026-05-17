@@ -92,16 +92,16 @@ const enUS = {
 
   stackLabel: "STACK",
 
-  stackTitle: "Technologies, tools and learning ecosystem.",
+  stackTitle: "Technologies, tools and engineering ecosystem.",
 
   stackDescription:
-    "Building solid knowledge in backend, security, cloud and software engineering.",
+    "Building a technical foundation focused on backend, security, cloud and architecture.",
 
-  stackBackendTitle: "Backend",
+  stackBackendTitle: "Backend Engineering",
 
-  stackSecurityCloudTitle: "Security & Cloud",
+  stackSecurityTitle: "Security & Cloud",
 
-  stackEvolutionTitle: "In Progress",
+  stackEvolutionTitle: "Continuous Evolution",
 
   footerContactLabel: "CONTACT",
 

@@ -91,16 +91,16 @@ const ptBR = {
 
   stackLabel: "STACK",
 
-  stackTitle: "Tecnologias, ferramentas e ecossistema de aprendizado.",
+  stackTitle: "Tecnologias, ferramentas e ecossistema de engenharia.",
 
   stackDescription:
-    "Construindo conhecimento sólido em backend, segurança, cloud e engenharia de software.",
+    "Construindo uma base técnica voltada para backend, segurança, cloud e arquitetura.",
 
-  stackBackendTitle: "Backend",
+  stackBackendTitle: "Engenharia Backend",
 
-  stackSecurityCloudTitle: "Segurança & Cloud",
+  stackSecurityTitle: "Segurança & Cloud",
 
-  stackEvolutionTitle: "Em evolução",
+  stackEvolutionTitle: "Evolução Contínua",
 
   footerContactLabel: "CONTATO",
 
