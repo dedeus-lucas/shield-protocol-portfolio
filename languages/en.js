@@ -103,6 +103,21 @@ const enUS = {
 
   stackEvolutionTitle: "Continuous Evolution",
 
+  projectsLabel: "PROJECTS",
+
+  projectsTitle: "Real projects, technical evolution and continuous building.",
+
+  projectsDescription:
+    "Projects focused on engineering, real applications and practical evolution.",
+
+  vlBadge: "MVP DELIVERED",
+
+  vlDescription:
+    "Premium institutional landing page for an aesthetics and physiotherapy clinic focused on performance, accessibility and experience.",
+
+  projectsLabsDescription:
+    "Labs focused on backend, secure APIs, observability, architecture and DevSecOps practices.",
+
   footerContactLabel: "CONTACT",
 
   footerContactTitle:

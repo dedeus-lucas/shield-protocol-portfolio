@@ -42,18 +42,6 @@ const ptBR = {
   aboutLearningDescription:
     "Expansão contínua em arquitetura, observabilidade e engenharia.",
 
-  projectsLabel: "PROJETOS",
-
-  projectsTitle: "Projetos, laboratórios e evolução técnica contínua.",
-
-  projectsDescription:
-    "Construindo projetos voltados para backend, segurança, arquitetura escalável e desenvolvimento orientado à engenharia.",
-
-  projectsBadge: "Em desenvolvimento",
-
-  projectsLabsDescription:
-    "Ambiente contínuo de aprendizado, testes de arquitetura, APIs seguras, automações, observabilidade e práticas DevSecOps.",
-
   journeyLabel: "JORNADA",
 
   journeyTitle: "Evolução contínua em engenharia, segurança e arquitetura.",
@@ -101,6 +89,21 @@ const ptBR = {
   stackSecurityTitle: "Segurança & Cloud",
 
   stackEvolutionTitle: "Evolução Contínua",
+
+  projectsLabel: "PROJETOS",
+
+  projectsTitle: "Projetos reais, evolução técnica e construção contínua.",
+
+  projectsDescription:
+    "Projetos voltados para engenharia, aplicações reais e evolução prática.",
+
+  vlBadge: "MVP ENTREGUE",
+
+  vlDescription:
+    "Landing page institucional premium para clínica de estética e fisioterapia focada em performance, acessibilidade e experiência.",
+
+  projectsLabsDescription:
+    "Laboratórios voltados para backend, APIs seguras, observabilidade, arquitetura e práticas DevSecOps.",
 
   footerContactLabel: "CONTATO",
 
