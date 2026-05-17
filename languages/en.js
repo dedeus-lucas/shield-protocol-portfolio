@@ -1,8 +1,16 @@
 const enUS = {
   navbarTitle: "Shield Protocol",
+
   navbarSubtitle: "Secure Systems Engineering Portfolio",
-  navbarProjects: "Projects",
+
+  navbarAbout: "About",
+
+  navbarJourney: "Journey",
+
   navbarStack: "Stack",
+
+  navbarProjects: "Projects",
+
   navbarContact: "Contact",
 
   heroBadge: "SECURE SYSTEMS ENGINEERING",

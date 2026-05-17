@@ -1,8 +1,16 @@
 const ptBR = {
   navbarTitle: "Shield Protocol",
+
   navbarSubtitle: "Portfólio de Engenharia de Sistemas Seguros",
-  navbarProjects: "Projetos",
+
+  navbarAbout: "Sobre",
+
+  navbarJourney: "Jornada",
+
   navbarStack: "Stack",
+
+  navbarProjects: "Projetos",
+
   navbarContact: "Contato",
 
   heroBadge: "ENGENHARIA DE SISTEMAS SEGUROS",
