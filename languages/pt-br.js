@@ -108,10 +108,12 @@ const ptBR = {
   vlBadge: "MVP ENTREGUE",
 
   vlDescription:
-    "Landing page institucional premium para clínica de estética e fisioterapia focada em performance, acessibilidade e experiência.",
+    "Landing page institucional premium para clínica de estética e fisioterapia com foco em performance, acessibilidade e experiência.",
+
+  projectsBadge: "Em desenvolvimento",
 
   projectsLabsDescription:
-    "Laboratórios voltados para backend, APIs seguras, observabilidade, arquitetura e práticas DevSecOps.",
+    "Laboratórios focados em backend, APIs seguras, observabilidade, arquitetura e práticas DevSecOps.",
 
   footerContactLabel: "CONTATO",
 

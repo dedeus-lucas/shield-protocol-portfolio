@@ -50,18 +50,6 @@ const enUS = {
   aboutLearningDescription:
     "Continuous expansion in architecture, observability and engineering.",
 
-  projectsLabel: "PROJECTS",
-
-  projectsTitle: "Projects, labs and continuous technical evolution.",
-
-  projectsDescription:
-    "Building projects focused on backend, security, scalable architecture and engineering-driven development.",
-
-  projectsBadge: "In development",
-
-  projectsLabsDescription:
-    "Continuous learning environment focused on architecture testing, secure APIs, automation, observability and DevSecOps practices.",
-
   journeyLabel: "JOURNEY",
 
   journeyTitle:
@@ -122,6 +110,8 @@ const enUS = {
 
   vlDescription:
     "Premium institutional landing page for an aesthetics and physiotherapy clinic focused on performance, accessibility and experience.",
+
+  projectsBadge: "IN DEVELOPMENT",
 
   projectsLabsDescription:
     "Labs focused on backend, secure APIs, observability, architecture and DevSecOps practices.",
