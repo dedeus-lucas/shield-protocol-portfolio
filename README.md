@@ -10,7 +10,7 @@ Portfólio técnico e hub de engenharia voltado para backend, arquitetura segura
 
 GitHub Pages:
 
-https://dedeus-lucas.github.io/shield-protocol/
+https://dedeus-lucas.github.io/shield-protocol-portfolio/
 
 ---
 
@@ -171,7 +171,7 @@ Status:
 ## Estrutura Atual
 
 ```txt
-shield-protocol/
+shield-protocol-portfolio/
 │
 ├── assets/
 │   │
@@ -434,7 +434,7 @@ Status:
 ## Project Structure
 
 ```txt
-shield-protocol/
+shield-protocol-portfolio/
 │
 ├── assets/
 │   │
