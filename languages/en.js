@@ -109,7 +109,7 @@ const enUS = {
   vlBadge: "MVP DELIVERED",
 
   vlDescription:
-    "Premium institutional landing page for an aesthetics and physiotherapy clinic focused on performance, accessibility and experience.",
+    "Premium institutional landing page developed for VL Estética e Fisioterapia, focused on user experience, performance and accessibility.",
 
   projectsBadge: "IN DEVELOPMENT",
 
