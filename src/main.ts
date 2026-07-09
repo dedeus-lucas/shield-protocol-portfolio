@@ -1,5 +1,6 @@
 // src/main.ts
 
+// CORREÇÃO: Alinhamento exato com a pasta src/languages/languageManager após a migração
 import { i18n } from './languages/languagesManager';
 import { terminalConsole } from './components/terminalConsole';
 
