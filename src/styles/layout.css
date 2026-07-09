@@ -1,5 +1,9 @@
+/* src/styles/layout.css */
+
 .app-container {
-  min-height: 100vh;
+  /* CORREÇÃO: Mudado de min-height: 100vh para auto para matar o duplo scroll e a trava na rolagem */
+  height: auto;
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -8,8 +12,9 @@
   margin-inline: auto;
 }
 
+/* CORREÇÃO: O padding foi removido daqui para não colidir com o clamp que ajustámos no style.css */
 .section {
-  padding: var(--space-xl) 0;
+  position: relative;
 }
 
 .grid {

@@ -1,3 +1,5 @@
+/* src/styles/reset.css */
+
 *,
 *::before,
 *::after {
@@ -9,12 +11,19 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  /* CORREÇÃO DE INFRA: Garante estabilidade na rolagem da janela principal */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: auto;
 }
 
 body {
+  /* CORREÇÃO: Removido o min-height engessado que forçava a quebra com elementos reativos */
+  height: auto;
   min-height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img,
