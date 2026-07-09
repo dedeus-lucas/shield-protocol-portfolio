@@ -596,14 +596,7 @@ img {
     background var(--transition-default);
 }
 
-.stack-items span:hover {
-  transform:
-    translateY(-3px);
-  background:
-    rgba(139, 92, 246, 0.08);
-  border:
-    1px solid rgba(139, 92, 246, 0.24);
-}
+/* CORREÇÃO IMPORTANTE: O seletor duplicado que estava aqui na antiga linha 596 foi inteiramente removido para evitar colisão léxica. */
 
 /* =========================================================
     PROJECTS
@@ -908,7 +901,6 @@ img {
 }
 
 .secondary-button:hover,
-.stack-items span:hover,
 .about-card:hover,
 .journey-card:hover,
 .stack-card:hover,
@@ -917,17 +909,19 @@ img {
     1px solid rgba(139, 92, 246, .28);
 }
 
+/* UNIFICAÇÃO PROFISSIONAL: Centralizada aqui toda a regra de interações para as tags da Stack */
+.stack-items span:hover {
+  transform: translateY(-3px);
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.24);
+}
+
 .about-card:hover,
 .journey-card:hover,
 .stack-card:hover,
 .projects-showcase:hover {
   box-shadow:
     0 16px 40px rgba(139, 92, 246, .08);
-}
-
-.stack-items span:hover {
-  transform:
-    translateY(-2px);
 }
 
 section,
