@@ -22,5 +22,5 @@
     "noImplicitAny": true,
     "strictNullChecks": true
   },
-  "include": ["src"]
+  "include": ["src", "vite-env.d.ts"]
 }

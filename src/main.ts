@@ -1,5 +1,15 @@
-// src/main.ts
+/* =========================================================
+   ORQUESTRAÇÃO DE ESTILOS (VITE BUNDLER)
+========================================================= */
+import './styles/reset.css';
+import './styles/variables.css';
+import './styles/typography.css';
+import './styles/layout.css';
+import './styles/style.css';
 
+/* =========================================================
+   IMPORTS DE LÓGICA E COMPONENTES
+========================================================= */
 import { i18n } from './languages/languagesManager';
 import { terminalConsole } from './components/terminalConsole';
 
@@ -9,6 +19,9 @@ interface SystemStatus {
   encryption: string;
 }
 
+/**
+ * Gerencia a alternância de idiomas e a atualização visual do botão correspondente
+ */
 const handleLanguageToggle = (button: HTMLButtonElement): void => {
   const currentLang = i18n.getCurrentLanguage();
   if (currentLang === 'pt-BR') {
@@ -24,27 +37,25 @@ const handleLanguageToggle = (button: HTMLButtonElement): void => {
  * Ativa o motor utilitário de animações reativas baseadas na rolagem (scroll)
  */
 const initScrollReveal = (): void => {
-  // Mapeamos as principais secções do site que devem surgir dinamicamente
   const targetSections = document.querySelectorAll('main > section, footer');
   
   const observerOptions = {
-    root: null, // usa o viewport global do navegador
+    root: null,
     rootMargin: '0px',
-    threshold: 0.12 // a secção ativa a animação quando 12% dela surge no ecrã
+    threshold: 0.12
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        // Uma vez visível, deixamos de observar o elemento para poupar memória RAM
         observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
   targetSections.forEach((section) => {
-    section.classList.add('reveal'); // Inicializa ocultado no CSS
+    section.classList.add('reveal');
     observer.observe(section);
   });
 };
@@ -53,9 +64,13 @@ const initializePortfolio = (config: SystemStatus): void => {
   console.log(`%c[SHIELD PROTOCOL] System Version ${config.version} initialized.`, "color: #00ff00; font-weight: bold;");
   console.log(`%c[STATUS] Firewall: ${config.status} | Cipher: ${config.encryption}`, "color: #00ffff;");
   
+  // 1. Inicialização das amarrações dinâmicas de internacionalização
   i18n.updateDOM();
+
+  // 2. Acoplamento do terminal interativo
   terminalConsole.bind('terminal-container', 'terminal-output', 'terminal-input');
 
+  // 3. Orquestração da reatividade do botão de idiomas
   const languageButton = document.getElementById('languageToggle') as HTMLButtonElement;
   if (languageButton) {
     languageButton.textContent = i18n.getCurrentLanguage() === 'pt-BR' ? 'EN' : 'PT';
@@ -64,9 +79,10 @@ const initializePortfolio = (config: SystemStatus): void => {
     });
   }
 
-  // Ativa as animações de scroll reativas
+  // 4. Ativa as animações de scroll reativas
   initScrollReveal();
 
+  // Mensagem operacional de boas-vindas no buffer do terminal
   terminalConsole.printLine('==================================================', 'system-line');
   terminalConsole.printLine('      SHIELD PROTOCOL OPERATIONAL CORE OS v1.0    ', 'system-line');
   terminalConsole.printLine('==================================================', 'system-line');
