@@ -19,7 +19,7 @@
       content="Portfólio de engenharia de sistemas seguros com foco em backend, arquitetura escalável, segurança de APIs, DevSecOps e cloud security."
     />
 
-    <meta property="og:image" content="./assets/images/og-cover.png" />
+    <meta property="og:image" content="/src/assets/images/og-cover.png" />
 
     <meta property="og:type" content="website" />
 
@@ -31,15 +31,19 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="./assets/favicons/favicon.svg"
+      href="/src/assets/favicons/favicon.svg"
     />
 
-    <link rel="icon" type="image/x-icon" href="./assets/favicons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/src/assets/favicons/favicon.ico"
+    />
 
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/favicons/apple-touch-icon.png"
+      href="/src/assets/favicons/apple-touch-icon.png"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -51,39 +55,39 @@
       content="Portfólio de engenharia de sistemas seguros com foco em backend, arquitetura escalável, segurança de APIs, DevSecOps e cloud security."
     />
 
-    <meta name="twitter:image" content="./assets/images/og-cover.png" />
+    <meta name="twitter:image" content="/src/assets/images/og-cover.png" />
 
     <meta name="author" content="Lucas Silva de Deus" />
 
     <meta name="robots" content="index, follow" />
 
-    <!-- FAVICONS -->
-
-    <link rel="icon" type="image/x-icon" href="./assets/favicons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/src/assets/favicons/favicon.ico"
+    />
 
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/favicons/favicon-16x16.png"
+      href="/src/assets/favicons/favicon-16x16.png"
     />
 
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicons/favicon-32x32.png"
+      href="/src/assets/favicons/favicon-32x32.png"
     />
 
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/favicons/apple-touch-icon.png"
+      href="/src/assets/favicons/apple-touch-icon.png"
     />
 
-    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
-
-    <!-- MOBILE / BROWSER COLORS -->
+    <link rel="manifest" href="/src/assets/favicons/site.webmanifest" />
 
     <meta name="theme-color" content="#0B0B12" />
 
@@ -109,19 +113,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/variables.css" />
-    <link rel="stylesheet" href="./src/styles/typography.css" />
-    <link rel="stylesheet" href="./src/styles/layout.css" />
-    <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
 
   <body>
     <div id="app">
       <div class="app-container">
-        <!-- HERO / HEADER -->
-
         <header class="hero" id="home">
           <div class="hero-background-glow"></div>
 
@@ -129,7 +125,7 @@
             <div class="navbar container">
               <div class="navbar-brand">
                 <img
-                  src="./assets/logos/shield-symbol.png"
+                  src="/src/assets/logos/shield-symbol.png"
                   alt="Shield Protocol Symbol"
                   class="navbar-logo"
                 />
@@ -197,13 +193,11 @@
               </div>
             </div>
 
-            <!-- TERMINAL CONSOLE INTERACTIVE ELEMENT -->
             <div class="hero-visual glass-card">
               <div
                 id="terminal-container"
                 class="terminal-box"
                 style="
-                  height: 100%;
                   display: flex;
                   flex-direction: column;
                   padding: 16px;
@@ -219,8 +213,8 @@
                   style="display: flex; align-items: center"
                 >
                   <span class="prompt" style="margin-right: 8px; color: #00ff00"
-                    >guest@shield-protocol:~$
-                  </span>
+                    >guest@shield-protocol:~$</span
+                  >
                   <input
                     type="text"
                     id="terminal-input"
@@ -242,14 +236,12 @@
           </section>
         </header>
 
-        <!-- MAIN CONTENT -->
         <main>
-          <!-- ABOUT -->
           <section class="about section container" id="about">
             <div class="about-header">
               <div class="about-photo glass-card">
                 <img
-                  src="./assets/images/profile.webp"
+                  src="/src/assets/images/profile.webp"
                   alt="Lucas Silva de Deus, foto pessoal. Pessoa negra, cabelo curto, barba aparada, usando camisa social cinza escuro, sorrindo levemente. Fundo neutro. Foto tirada de frente, mostrando rosto e ombros."
                   width="500"
                   height="650"
@@ -318,7 +310,6 @@
             </div>
           </section>
 
-          <!-- JOURNEY -->
           <section class="journey section container" id="journey">
             <div class="journey-header">
               <span class="section-label" data-i18n="journey.label">
@@ -336,7 +327,6 @@
             </div>
 
             <div class="journey-timeline">
-              <!-- 2024 -->
               <article class="journey-card glass-card">
                 <span class="journey-year" data-i18n="journey.current.year">
                   2024
@@ -352,7 +342,6 @@
                 </p>
               </article>
 
-              <!-- 2025 -->
               <article class="journey-card glass-card">
                 <span class="journey-year" data-i18n="journey.evolution.year">
                   2025
@@ -368,7 +357,6 @@
                 </p>
               </article>
 
-              <!-- 2026 -->
               <article class="journey-card glass-card">
                 <span class="journey-year" data-i18n="journey.expansion.year">
                   2026
@@ -383,7 +371,6 @@
                 </p>
               </article>
 
-              <!-- FUTURO -->
               <article class="journey-card glass-card">
                 <span class="journey-year" data-i18n="journey.future.year">
                   FUTURO
@@ -401,7 +388,6 @@
             </div>
           </section>
 
-          <!-- STACK -->
           <section class="stack section container" id="stack">
             <div class="stack-header">
               <span class="section-label" data-i18n="stack.label"> STACK </span>
@@ -417,7 +403,6 @@
             </div>
 
             <div class="stack-grid">
-              <!-- BACKEND -->
               <article class="stack-card glass-card">
                 <h3 data-i18n="stack.backendTitle">Backend Engineering</h3>
 
@@ -432,7 +417,6 @@
                 </div>
               </article>
 
-              <!-- SECURITY -->
               <article class="stack-card glass-card">
                 <h3 data-i18n="stack.securityTitle">Security & Cloud</h3>
 
@@ -446,7 +430,6 @@
                 </div>
               </article>
 
-              <!-- EVOLUTION -->
               <article class="stack-card glass-card">
                 <h3 data-i18n="stack.evolutionTitle">Continuous Evolution</h3>
                 <div class="stack-items">
@@ -461,7 +444,6 @@
             </div>
           </section>
 
-          <!-- PROJECTS -->
           <section class="projects section" id="projects">
             <div class="container">
               <div class="projects-header">
@@ -482,7 +464,6 @@
                 </p>
               </div>
 
-              <!-- VL -->
               <article class="projects-showcase projects-reverse glass-card">
                 <div class="projects-content">
                   <span class="project-badge" data-i18n="projects.vl.badge">
@@ -534,7 +515,7 @@
 
                 <div class="projects-image">
                   <img
-                    src="./assets/projects/vl-estetica-card.webp"
+                    src="/src/assets/projects/vl-estetica-card.webp"
                     alt="VL Estética Project"
                     loading="lazy"
                     width="900"
@@ -543,11 +524,10 @@
                 </div>
               </article>
 
-              <!-- labs -->
               <article class="projects-showcase glass-card">
                 <div class="projects-image">
                   <img
-                    src="./assets/projects/projects-labs-background.webp"
+                    src="/src/assets/projects/projects-labs-background.webp"
                     alt="Shield Labs"
                     loading="lazy"
                     width="900"
@@ -580,11 +560,10 @@
           </section>
         </main>
 
-        <!-- FOOTER -->
         <footer class="footer" id="contact">
           <div class="footer-background">
             <img
-              src="./assets/backgrounds/footer-cyber-city.webp"
+              src="/src/assets/backgrounds/footer-cyber-city.webp"
               alt="Cyber City Atmosphere"
               loading="lazy"
               width="1920"
@@ -659,7 +638,6 @@
       </div>
     </div>
 
-    <!-- Ponto de entrada modular único gerenciado pelo Vite -->
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
