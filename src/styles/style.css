@@ -129,13 +129,10 @@ img {
     transform .35s ease;
 }
 
-/* mobile idle */
 .navbar-wrapper.hidden-mobile {
   opacity: 0;
   transform: translateY(-100%);
 }
-
-/* container interno */
 
 .navbar {
   display: flex;
@@ -164,8 +161,6 @@ img {
     0 12px 40px rgba(0, 0, 0, .28);
 }
 
-/* LOGO */
-
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -175,7 +170,6 @@ img {
 }
 
 .navbar-logo {
-
   width: 56px;
   height: 56px;
   object-fit: contain;
@@ -201,8 +195,6 @@ img {
     var(--color-text-secondary);
   letter-spacing: .08em;
 }
-
-/* LINKS */
 
 .navbar-links {
   display: flex;
@@ -246,8 +238,6 @@ img {
     scaleX(1);
 }
 
-/* idioma */
-
 .language-toggle {
   flex-shrink: 0;
   padding:
@@ -270,8 +260,6 @@ img {
   border:
     1px solid rgba(139, 92, 246, .32);
 }
-
-/* MOBILE */
 
 @media (max-width: 980px) {
   .navbar {
@@ -361,20 +349,9 @@ img {
   padding: 1rem;
   border:
     1px solid rgba(139, 92, 246, 0.12);
-}
-
-.hero-visual img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius:
-    var(--radius-md);
-  opacity: 0.92;
-  filter:
-    saturate(1.05) contrast(1.02);
-  transform:
-    scale(1.01);
-  will-change: transform;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* =========================================================
@@ -469,12 +446,10 @@ img {
 }
 
 @media(min-width:900px) {
-
   .about-header {
     grid-template-columns:
       420px 1fr;
   }
-
 }
 
 /* =========================================================
@@ -650,15 +625,11 @@ img {
   max-width: 650px;
 }
 
-/* LISTA */
-
 .projects-list {
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
-
-/* CARD */
 
 .projects-showcase {
   display: grid;
@@ -673,12 +644,9 @@ img {
     var(--radius-lg);
 }
 
-/* alternância visual */
-
 .projects-showcase.reverse {
   grid-template-columns:
     1fr 1.05fr;
-
 }
 
 .projects-showcase.reverse .projects-image {
@@ -688,8 +656,6 @@ img {
 .projects-showcase.reverse .projects-content {
   order: 1;
 }
-
-/* IMAGEM */
 
 .projects-image {
   position: relative;
@@ -720,8 +686,6 @@ img {
   transform:
     scale(1.04);
 }
-
-/* CONTEÚDO */
 
 .projects-content {
   display: flex;
@@ -755,8 +719,6 @@ img {
       2.3rem);
 }
 
-/* STACK */
-
 .projects-stack {
   display: flex;
   flex-wrap: wrap;
@@ -775,8 +737,6 @@ img {
     var(--color-text-secondary);
   font-size: .85rem;
 }
-
-/* LINKS */
 
 .projects-links {
   display: flex;
@@ -876,60 +836,40 @@ img {
 }
 
 .footer-contact-card {
-
   display: flex;
-
   gap: 2rem;
-
   align-items: center;
-
   padding:
     1.2rem 2rem;
-
   margin-top:
     .5rem;
 }
 
 .footer-contact-item {
-
   display: flex;
-
   flex-direction: column;
-
   gap: .45rem;
 }
 
 .footer-contact-label {
-
   font-size: .72rem;
-
   letter-spacing: .18em;
-
   text-transform: uppercase;
-
   color:
     var(--color-text-secondary);
 }
 
 .footer-contact-item a {
-
   color:
     var(--color-text-primary);
-
   font-weight: 600;
 }
 
 .footer-contact-divider {
-
   width: 1px;
-
   height: 42px;
-
   background:
-    rgba(255,
-      255,
-      255,
-      .08);
+    rgba(255, 255, 255, .08);
 }
 
 .footer-actions {
@@ -949,7 +889,7 @@ img {
 }
 
 /* =========================================================
-    INTERACTIONS
+    INTERACTIONS & RESPONSIVE
 ========================================================= */
 
 .primary-button:hover,
@@ -964,10 +904,7 @@ img {
 
 .primary-button:hover {
   box-shadow:
-    0 12px 30px rgba(139,
-      92,
-      246,
-      .35);
+    0 12px 30px rgba(139, 92, 246, .35);
 }
 
 .secondary-button:hover,
@@ -977,10 +914,7 @@ img {
 .stack-card:hover,
 .projects-showcase:hover {
   border:
-    1px solid rgba(139,
-      92,
-      246,
-      .28);
+    1px solid rgba(139, 92, 246, .28);
 }
 
 .about-card:hover,
@@ -988,10 +922,7 @@ img {
 .stack-card:hover,
 .projects-showcase:hover {
   box-shadow:
-    0 16px 40px rgba(139,
-      92,
-      246,
-      .08);
+    0 16px 40px rgba(139, 92, 246, .08);
 }
 
 .stack-items span:hover {
@@ -1004,10 +935,6 @@ footer {
   scroll-margin-top:
     120px;
 }
-
-/* =========================================================
-    RESPONSIVE
-========================================================= */
 
 @media (min-width:900px) {
   .hero-content {
@@ -1110,5 +1037,89 @@ footer {
   .navbar-logo {
     width: 48px;
     height: 48px;
+  }
+}
+
+/* =========================================================
+    TERMINAL OPERATIONAL SYSTEM STYLES
+========================================================= */
+
+.terminal-box {
+  background: #06070a !important;
+  border: 1px solid rgba(139, 92, 246, 0.25) !important;
+  border-radius: var(--radius-md);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8), 0 8px 32px rgba(0, 0, 0, 0.5);
+  font-family: 'Courier New', Courier, monospace !important;
+  color: #b6bcc8;
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal-box::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 10;
+  background-size: 100% 3px, 3px 100%;
+  pointer-events: none;
+}
+
+.terminal-line {
+  line-height: 1.4;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.prompt-line {
+  color: #a78bfa;
+  font-weight: bold;
+}
+
+.system-line {
+  color: #8b5cf6;
+}
+
+.success-line {
+  color: #00ff00;
+  text-shadow: 0 0 4px rgba(0, 255, 0, 0.5);
+}
+
+.error-line {
+  color: #ff3333;
+  text-shadow: 0 0 4px rgba(255, 51, 51, 0.5);
+}
+
+/* SCANNING EFFECT ANIMATION */
+.scanning-effect {
+  position: relative;
+}
+
+.scanning-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(139, 92, 246, 0.7);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 1), 0 0 40px rgba(139, 92, 246, 0.5);
+  animation: scanLine 1.5s linear infinite;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes scanLine {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: 100%;
+    opacity: 0;
   }
 }
