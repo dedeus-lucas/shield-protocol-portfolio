@@ -2,13 +2,13 @@ import { TranslationSchema } from './translations';
 
 export const en: TranslationSchema = {
   metadata: {
-    title: "Shield Protocol - Technical Portfolio",
-    description: "Security platform and high-impact systems development.",
+    title: "Shield Protocol - Software Engineering & Security",
+    description: "Technical portfolio focused on backend engineering, secure systems architecture, and DevSecOps.",
   },
 
   nav: {
     title: "Shield Protocol",
-    subtitle: "Secure Systems Engineering Portfolio",
+    subtitle: "Secure Systems Engineering",
     home: "Home",
     about: "About",
     journey: "Journey",
@@ -21,8 +21,8 @@ export const en: TranslationSchema = {
     badge: "SECURE SYSTEMS ENGINEERING",
     welcome: "SYSTEM INITIALIZED",
     title: "Backend Engineering, Cloud Security & Secure Architecture",
-    subtitle: "Computer Science undergraduate student focusing on Java, Spring ecosystem, API security, DevSecOps, and secure architecture.",
-    description: "Computer Science undergraduate student focusing on Java, Spring ecosystem, API security, DevSecOps, and secure architecture.",
+    subtitle: "Developing scalable ecosystems focusing on Java, Spring Boot, API protection, and DevSecOps automation.",
+    description: "Computer Science undergraduate focused on building robust applications, mitigating corporate vulnerabilities, and distributed infrastructure.",
     cta: "Execute Inspection",
     projectsButton: "View Projects",
     githubButton: "GitHub",
@@ -30,54 +30,54 @@ export const en: TranslationSchema = {
 
   about: {
     label: "ABOUT",
-    title: "Building engineering, security, and continuous evolution.",
-    description1: "Computer Science undergraduate student focused on backend engineering, API security, cloud security, and scalable architecture.",
-    description2: "Building knowledge in Java, Spring, DevSecOps, Linux, cloud, and secure development.",
-    description3: "Objective: build robust, secure, and engineering-oriented systems.",
+    title: "Building resilient engineering, active security, and continuous evolution.",
+    description1: "Computer Science undergraduate specialized in the design and implementation of high-availability backend architectures, rigorous API security, and Cloud Security.",
+    description2: "Proficient in the Spring ecosystem, automated CI/CD pipelines under a DevSecOps culture, Docker virtualization, and critical Linux environment administration.",
+    description3: "Objective: To develop fault-tolerant enterprise systems by applying cutting-edge cryptography and core principles of Clean Architecture.",
     backend: {
       title: "Backend Engineering",
-      description: "Java, Spring Boot, REST APIs, and scalable architecture.",
+      description: "Robust development with Java, Spring Boot, JPA/Hibernate, and relational/non-relational database modeling.",
     },
     security: {
       title: "Security & Cloud",
-      description: "API Security, Cloud, and DevSecOps practices.",
+      description: "OWASP Top 10 mitigation, restricted API auditing, IAM management on AWS/GCP, and container hardening.",
     },
     learning: {
       title: "Continuous Evolution",
-      description: "Ongoing expansion in architecture, observability, and engineering.",
+      description: "Ongoing research into event-driven microservices, Site Reliability Engineering (SRE), and deep observability.",
     },
   },
 
   journey: {
     label: "JOURNEY",
-    title: "Continuous evolution in engineering, security, and architecture.",
-    description: "Building progressive technical knowledge with a focus on backend, cloud, security, and real-world applications.",
+    title: "Technical progression oriented toward mission-critical systems.",
+    description: "Continuous evolution grounded in pure software engineering, defensive security, and delivering scalable solutions in real-world scenarios.",
     current: {
       year: "2024",
       title: "Foundations & Technical Base",
-      description: "Beginning of technology education with fundamentals of Linux, networking, infrastructure, and software engineering, consolidating the base for technical evolution.",
+      description: "Formal entry into Computer Science. Consolidation of structural pillars in computer networks, Linux OS architecture, algorithms, and infrastructure.",
     },
     evolution: {
       year: "2025",
       title: "Backend, Cloud & Security",
-      description: "Formalizing in-depth study in Cybersecurity, backend engineering, Java, JavaScript, cloud computing, and secure architecture.",
+      description: "Specialization in the Java/Spring ecosystem. In-depth study of cryptography, API protection (OAuth2/JWT), containerization with Docker, and Cloud Security provisioning.",
     },
     expansion: {
       year: "2026",
       title: "Real Projects & Expansion",
-      description: "Practical application in freelance projects, in-depth study in PHP, Python, automations, applied AI, and solution-oriented development.",
+      description: "Architecture and deployment of enterprise platforms. Autonomous development of large-scale solutions, multi-framework integrations (PHP/Python), and automation via applied AI.",
     },
     future: {
       year: "FUTURE",
       title: "Specialization & Solutions",
-      description: "Focus on DevSecOps, AppSec, Ethical Hacking, solutions architecture, and enterprise real-world project development.",
+      description: "High-Seniority Software Engineering. Advanced focus on AppSec, robust DevSecOps, enterprise System Design modeling, and distributed systems auditing.",
     },
   },
 
   stack: {
     label: "STACK",
     title: "Technologies, tools, and engineering ecosystem.",
-    description: "Building a technical foundation focused on backend, security, cloud, and architecture.",
+    description: "A comprehensive skill set structured to support scalable, secure, and monitored backend applications.",
     backendTitle: "Backend Engineering",
     securityTitle: "Security & Cloud",
     evolutionTitle: "Continuous Evolution",
@@ -86,14 +86,14 @@ export const en: TranslationSchema = {
   projects: {
     label: "PROJECTS",
     title: "Real projects, technical evolution, and continuous construction.",
-    description: "Projects focused on engineering, real-world applications, and practical evolution.",
+    description: "Systems developed under strict software engineering, performance, and secure design metrics.",
     vl: {
       badge: "MVP DELIVERED",
-      description: "Premium institutional landing page developed for VL Estética e Fisioterapia, focusing on user experience, performance, and accessibility.",
+      description: "Premium institutional platform optimized for VL Estética e Fisioterapia. Engineering focused on Core Web Vitals, extreme performance, advanced SEO, and digital accessibility (a11y).",
     },
     labs: {
-      badge: "In development",
-      description: "Laboratories focused on backend, secure APIs, observability, architecture, and DevSecOps practices.",
+      badge: "IN DEVELOPMENT",
+      description: "Isolated environments (sandbox) focused on Java microservices design, load testing, deep observability (Prometheus/Grafana), and DevSecOps pipelines.",
     },
   },
 
@@ -101,7 +101,7 @@ export const en: TranslationSchema = {
     contact: {
       label: "CONTACT",
       title: "Building projects, knowledge, and engineering-oriented solutions.",
-      description: "Open for opportunities, freelance contracts, technical collaboration, and real-world projects.",
+      description: "Available for technical consulting, freelance software engineering, security project partnerships, and enterprise corporate positions.",
     },
     copyright: "© 2026 Shield Protocol. All rights reserved.",
   },

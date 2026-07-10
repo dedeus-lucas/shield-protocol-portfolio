@@ -2,13 +2,13 @@ import { TranslationSchema } from './translations';
 
 export const ptBr: TranslationSchema = {
   metadata: {
-    title: "Shield Protocol - Portfólio Técnico",
-    description: "Plataforma de segurança e desenvolvimento de sistemas de alto impacto.",
+    title: "Shield Protocol - Engenharia de Software & Segurança",
+    description: "Portfólio técnico focado em engenharia backend, arquitetura de sistemas seguros e DevSecOps.",
   },
 
   nav: {
     title: "Shield Protocol",
-    subtitle: "Portfólio de Engenharia de Sistemas Seguros",
+    subtitle: "Engenharia de Sistemas Seguros",
     home: "Início",
     about: "Sobre",
     journey: "Jornada",
@@ -21,8 +21,8 @@ export const ptBr: TranslationSchema = {
     badge: "ENGENHARIA DE SISTEMAS SEGUROS",
     welcome: "SISTEMA INICIALIZADO",
     title: "Engenharia Backend, Segurança em Cloud & Arquitetura Segura",
-    subtitle: "Bacharelando em Ciência da Computação com foco em Java, ecossistema Spring, segurança de APIs, DevSecOps e arquitetura segura.",
-    description: "Bacharelando em Ciência da Computação com foco em Java, ecossistema Spring, segurança de APIs, DevSecOps e arquitetura segura.",
+    subtitle: "Desenvolvimento de ecossistemas escaláveis com foco em Java, Spring Boot, proteção de APIs e automação DevSecOps.",
+    description: "Bacharelando em Ciência da Computação focado na construção de aplicações robustas, mitigação de vulnerabilidades corporativas e infraestrutura distribuída.",
     cta: "Executar Inspeção",
     projectsButton: "Ver Projetos",
     githubButton: "GitHub",
@@ -30,70 +30,70 @@ export const ptBr: TranslationSchema = {
 
   about: {
     label: "SOBRE",
-    title: "Construindo engenharia, segurança e evolução contínua.",
-    description1: "Bacharelando em Ciência da Computação com foco em engenharia backend, segurança de APIs, cloud security e arquitetura escalável.",
-    description2: "Construindo conhecimento em Java, Spring, DevSecOps, Linux, cloud e desenvolvimento seguro.",
-    description3: "Objetivo: construir sistemas robustos, seguros e orientados à engenharia.",
+    title: "Construindo engenharia resiliente, segurança ativa e evolução contínua.",
+    description1: "Bacharelando em Ciência da Computação especializado no design e implementação de arquiteturas backend de alta disponibilidade, segurança rigorosa de APIs e Cloud Security.",
+    description2: "Proficiente no ecossistema Spring, pipelines de CI/CD automatizados sob cultura DevSecOps, virtualização com Docker e administração de ambientes críticos em Linux.",
+    description3: "Objetivo: Desenvolver sistemas corporativos tolerantes a falhas, aplicando criptografia de ponta e princípios fundamentais de Clean Architecture.",
     backend: {
       title: "Engenharia Backend",
-      description: "Java, Spring Boot, APIs REST e arquitetura escalável.",
+      description: "Desenvolvimento robusto com Java, Spring Boot, JPA/Hibernate e modelagem de bancos de dados relacionais e não-relacionais.",
     },
     security: {
       title: "Segurança & Cloud",
-      description: "Segurança de APIs, Cloud e práticas DevSecOps.",
+      description: "Mitigação de OWASP Top 10, auditoria de APIs restritas, gerenciamento de IAM na AWS/GCP e hardening de contêineres.",
     },
     learning: {
       title: "Evolução Contínua",
-      description: "Expansão contínua em arquitetura, observabilidade e engenharia.",
+      description: "Pesquisa contínua em microserviços orientados a eventos, engenharia de confiabilidade (SRE) e observabilidade profunda.",
     },
   },
 
   journey: {
     label: "JORNADA",
-    title: "Evolução contínua em engenharia, segurança e arquitetura.",
-    description: "Construindo conhecimento técnico progressivo com foco em backend, cloud, segurança e aplicações reais.",
+    title: "Progressão técnica orientada a sistemas de missão crítica.",
+    description: "Evolução contínua fundamentada em engenharia de software pura, segurança defensiva e entrega de soluções escaláveis em cenários reais.",
     current: {
       year: "2024",
-      title: "Fundamentos & Base Técnico",
-      description: "Início da formação em tecnologia com fundamentos de Linux, redes, infraestrutura e engenharia de software, consolidando a base para evolução técnica.",
+      title: "Fundamentos & Base Técnica",
+      description: "Ingresso formal na Ciência da Computação. Consolidação de pilares estruturais em redes de computadores, arquitetura de SO Linux, algoritmos e infraestrutura de redes.",
     },
     evolution: {
       year: "2025",
       title: "Backend, Cloud & Segurança",
-      description: "Formalização do aprofundamento em Cybersecurity, engenharia backend, Java, JavaScript, cloud computing e arquitetura segura.",
+      description: "Especialização no ecossistema Java/Spring. Aprofundamento em criptografia, proteção de APIs (OAuth2/JWT), conteinerização com Docker e provisionamento em Cloud Security.",
     },
     expansion: {
       year: "2026",
       title: "Projetos Reais & Expansão",
-      description: "Aplicação prática em projetos freelancer, aprofundamento em PHP, Python, automações, IA aplicada e desenvolvimento orientado a soluções.",
+      description: "Arquitetura e implantação de plataformas corporativas. Desenvolvimento autônomo de soluções em larga escala, integrações multiframework (PHP/Python) e automação via IA aplicada.",
     },
     future: {
       year: "FUTURO",
       title: "Especialização & Soluções",
-      description: "Foco em DevSecOps, AppSec, Ethical Hacking, arquitetura de soluções e desenvolvimento de projetos empresariais reais.",
+      description: "Engenharia de Software de Alta Senioridade. Foco avançado em AppSec, DevSecOps robusto, modelagem de System Design empresarial e auditoria de sistemas distribuídos.",
     },
   },
 
   stack: {
     label: "STACK",
     title: "Tecnologias, ferramentas e ecossistema de engenharia.",
-    description: "Construindo uma base técnica voltada para backend, segurança, cloud e arquitetura.",
-    backendTitle: "Engenharia Backend",
-    securityTitle: "Segurança & Cloud",
-    evolutionTitle: "Evolução Contínua",
+    description: "Conjunto de competências estruturado para sustentar aplicações backend escaláveis, seguras e monitoradas.",
+    backendTitle: "Backend Engineering",
+    securityTitle: "Security & Cloud",
+    evolutionTitle: "Continuous Evolution",
   },
 
   projects: {
     label: "PROJETOS",
     title: "Projetos reais, evolução técnica e construção contínua.",
-    description: "Projetos voltados para engenharia, aplicações reais e evolução prática.",
+    description: "Sistemas desenvolvidos sob métricas rigorosas de engenharia, performance e design seguro.",
     vl: {
       badge: "MVP ENTREGUE",
-      description: "Landing page institucional premium desenvolvida para a VL Estética e Fisioterapia, com foco em experiência do usuário, performance e acessibilidade.",
+      description: "Plataforma institucional premium otimizada para a VL Estética e Fisioterapia. Engenharia focada em Core Web Vitals, performance extrema, SEO avançado e acessibilidade digital (a11y).",
     },
     labs: {
-      badge: "Em desenvolvimento",
-      description: "Laboratórios focados em backend, APIs seguras, observabilidade, arquitetura e práticas DevSecOps.",
+      badge: "EM DESENVOLVIMENTO",
+      description: "Ambientes isolados (sandbox) focados no design de microsserviços Java, testes de carga, observabilidade (Prometheus/Grafana) e esteiras DevSecOps.",
     },
   },
 
@@ -101,7 +101,7 @@ export const ptBr: TranslationSchema = {
     contact: {
       label: "CONTATO",
       title: "Construindo projetos, conhecimento e soluções orientadas à engenharia.",
-      description: "Aberto para oportunidades, freelas, colaboração técnica e projetos reais.",
+      description: "Disponível para consultoria técnica, engenharia de software freelancer, parcerias em projetos de segurança e posições corporativas.",
     },
     copyright: "© 2026 Shield Protocol. Todos os direitos reservados.",
   },

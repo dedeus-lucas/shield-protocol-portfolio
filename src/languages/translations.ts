@@ -100,5 +100,10 @@ export interface TranslationSchema {
     welcome: string;
     help_message: string;
     waiting: string;
+    success: string;
+    accessDenied: string;
+    invalidLang: string;
+    shiftSuccess: string;
+    helpOutput: string;
   };
 }
