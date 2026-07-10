@@ -22,19 +22,39 @@ interface SystemStatus {
 }
 
 /**
- * Atualiza o placeholder do terminal baseado no idioma ativo
+ * Renderiza ou atualiza o buffer de boas-vindas do terminal com base no idioma atual
+ */
+const renderTerminalWelcomeMessage = (): void => {
+  const translations = i18n.getText();
+  
+  // 1. Procura o container de output do terminal
+  const outputContainer = document.getElementById('terminal-output');
+  if (outputContainer) {
+    // Limpa o conteúdo anterior para evitar duplicar linhas ao trocar de idioma
+    outputContainer.innerHTML = '';
+  }
+
+  // 2. Imprime as linhas traduzidas
+  terminalConsole.printLine('==================================================', 'system-line');
+  terminalConsole.printLine(`      ${translations.terminal.welcome}    `, 'system-line');
+  terminalConsole.printLine('==================================================', 'system-line');
+  terminalConsole.printLine(`${translations.terminal.help_message}\n`, 'success-line');
+};
+
+/**
+ * Atualiza o placeholder do terminal baseado no idioma ativo no dicionário
  */
 const updateTerminalPlaceholder = (): void => {
   const terminalInput = document.getElementById('terminal-input') as HTMLInputElement;
   if (terminalInput) {
-    // Busca a tradução direto do gerenciador e injeta como placeholder
     const translations = i18n.getText();
     terminalInput.placeholder = translations.terminal?.waiting || 'Awaiting command...';
+    terminalInput.value = '';
   }
 };
 
 /**
- * Gerencia a alternância de idiomas e a atualização visual do botão correspondente
+ * Gerencia a alternância de idiomas e a atualização visual de todos os componentes
  */
 const handleLanguageToggle = (button: HTMLButtonElement): void => {
   const currentLang = i18n.getCurrentLanguage();
@@ -46,8 +66,11 @@ const handleLanguageToggle = (button: HTMLButtonElement): void => {
     button.textContent = 'EN';
   }
   
-  // Sincroniza o placeholder do terminal imediatamente após a troca
+  // Sincroniza o placeholder do input do terminal
   updateTerminalPlaceholder();
+  
+  // Sincroniza e re-renderiza as linhas do terminal instantaneamente
+  renderTerminalWelcomeMessage();
 };
 
 /**
@@ -81,14 +104,15 @@ const initializePortfolio = (config: SystemStatus): void => {
   console.log(`%c[SHIELD PROTOCOL] System Version ${config.version} initialized.`, "color: #00ff00; font-weight: bold;");
   console.log(`%c[STATUS] Firewall: ${config.status} | Cipher: ${config.encryption}`, "color: #00ffff;");
   
-  // 1. Inicialização das amarrações dinâmicas de internacionalização
+  // 1. Inicialização das amarrações dinâmicas de internacionalização do DOM
   i18n.updateDOM();
 
   // 2. Acoplamento do terminal interativo
   terminalConsole.bind('terminal-container', 'terminal-output', 'terminal-input');
 
-  // 3. Configura o placeholder inicial traduzido do terminal
+  // 3. Força a tradução inicial do placeholder e do buffer de texto do console
   updateTerminalPlaceholder();
+  renderTerminalWelcomeMessage();
 
   // 4. Orquestração da reatividade do botão de idiomas
   const languageButton = document.getElementById('languageToggle') as HTMLButtonElement;
@@ -101,12 +125,6 @@ const initializePortfolio = (config: SystemStatus): void => {
 
   // 5. Ativa as animações de scroll reativas
   initScrollReveal();
-
-  // Mensagem operacional de boas-vindas no buffer do terminal
-  terminalConsole.printLine('==================================================', 'system-line');
-  terminalConsole.printLine('      SHIELD PROTOCOL OPERATIONAL CORE OS v1.0    ', 'system-line');
-  terminalConsole.printLine('==================================================', 'system-line');
-  terminalConsole.printLine('Type "help" to list secure communications protocols.\n', 'success-line');
 };
 
 document.addEventListener('DOMContentLoaded', () => {

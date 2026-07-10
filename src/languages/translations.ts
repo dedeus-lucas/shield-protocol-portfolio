@@ -1,3 +1,5 @@
+// src/languages/translations.ts
+
 export interface TranslationSchema {
   metadata: {
     title: string;
@@ -101,4 +103,4 @@ export interface TranslationSchema {
     help_message: string;
     waiting: string;
   };
-};
+}
