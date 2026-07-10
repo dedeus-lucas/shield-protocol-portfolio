@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/shield-protocol/',
+  base: '/shield-protocol-portfolio/',
   build: {
     outDir: 'dist',
     minify: 'esbuild',
