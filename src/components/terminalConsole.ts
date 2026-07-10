@@ -22,14 +22,10 @@ export class TerminalConsole {
 
     if (this.inputField) {
       this.inputField.addEventListener('keydown', (e) => this.handleKeyDown(e));
-      this.refreshPlaceholder();
     }
-  }
-
-  public refreshPlaceholder(): void {
-    if (this.inputField) {
-      this.inputField.placeholder = i18n.getText().terminal.placeholder;
-    }
+    
+    // Garante o autofocus corporativo ao clicar no contêiner pai
+    this.container?.addEventListener('click', () => this.inputField?.focus());
   }
 
   private handleKeyDown(event: KeyboardEvent): void {
@@ -40,8 +36,10 @@ export class TerminalConsole {
 
     if (!rawInput.trim()) return;
 
+    // 1. Ecoa o prompt de comando (Estilo terminal real)
     this.printLine(`guest@shield-protocol:~$ ${rawInput}`, 'prompt-line');
 
+    // 2. Processa o comando delegando para o core
     const result = this.core.executeCommand(rawInput);
 
     if (result.clearTerminal) {
@@ -58,6 +56,9 @@ export class TerminalConsole {
     }
   }
 
+  /**
+   * Imprime uma linha de texto no buffer do console
+   */
   public printLine(text: string, className: string = ''): void {
     if (!this.outputBuffer) return;
 
@@ -65,14 +66,12 @@ export class TerminalConsole {
     line.className = `terminal-line ${className}`;
     line.style.whiteSpace = 'pre-wrap';
     line.style.marginBottom = '4px';
-    
     line.textContent = text;
 
     this.outputBuffer.appendChild(line);
 
-    if (this.container) {
-      this.container.scrollTop = this.container.scrollHeight;
-    }
+    // Força a rolagem automática baseada na altura total do buffer
+    this.outputBuffer.scrollTop = this.outputBuffer.scrollHeight;
   }
 
   private clear(): void {
@@ -82,14 +81,17 @@ export class TerminalConsole {
   }
 
   private handleSystemAction(action: string): void {
+    // Captura o botão da navbar para manter o estado em sincronia quando alterado via terminal
+    const languageButton = document.getElementById('languageToggle') as HTMLButtonElement;
+
     switch (action) {
       case 'change-lang-en':
         i18n.setLanguage('en');
-        this.refreshPlaceholder();
+        if (languageButton) languageButton.textContent = 'PT';
         break;
       case 'change-lang-pt':
         i18n.setLanguage('pt-BR');
-        this.refreshPlaceholder();
+        if (languageButton) languageButton.textContent = 'EN';
         break;
       case 'trigger-scan':
         this.executeVisualScanEffect();
