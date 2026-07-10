@@ -25,6 +25,7 @@ O **Shield Protocol** é um portfólio técnico de nível corporativo projetado 
 
 O projeto elimina de forma cirúrgica quaisquer dependências acopladas globalmente, forçando um fluxo unidirecional e previsível de eventos:
 
+```bash
 [ Ação do Navegador ] ──> Gatilho na Navbar / Entrada de Linha do Console
 │
 ▼
@@ -37,6 +38,7 @@ O projeto elimina de forma cirúrgica quaisquer dependências acopladas globalme
 │
 ▼
 [ ConsoleView do Terminal ] ──> Atualiza o Buffer CRT / Executa Animações de Varredura
+```
 
 ---
 
@@ -69,17 +71,29 @@ Através de uma refatoração cirúrgica nas camadas de layout e renderização,
 Para auditar o ambiente em seu contêiner local, execute a seguinte sequência de instruções no terminal:
 
 1. Clone o repositório da branch principal:
-   git clone https://github.com/dedeus-lucas/shield-protocol.git
-   cd shield-protocol
+
+   ```bash
+   git clone [https://github.com/dedeus-lucas/shield-protocol-portfolio.git](https://github.com/dedeus-lucas/shield-protocol-portfolio.git)
+   cd shield-protocol-portfolio
+   ```
 
 2. Instale a árvore de dependências isoladas:
+
+   ```bash
    npm install
+   ```
 
 3. Inicie o servidor local de alta velocidade:
+
+   ```bash
    npm run dev
+   ```
 
 4. Execute o build final de otimização para produção:
+
+   ```bash
    npm run build
+   ```
 
 ---
 ---
@@ -104,6 +118,7 @@ Para auditar o ambiente em seu contêiner local, execute a seguinte sequência d
 
 The codebase strictly adheres to the Separation of Concerns (SoC) and clean directory boundaries. It eliminates global cascading dependencies by enforcing explicit operational flows:
 
+```bash
 [ Browser Event ] ──> Clocks Language Toggle / Terminal Input
 │
 ▼
@@ -116,6 +131,7 @@ The codebase strictly adheres to the Separation of Concerns (SoC) and clean dire
 │
 ▼
 [ TerminalConsole View ] ──> Refreshes CRT Sandbox / Runs Scanning Buffers
+```
 
 ---
 
@@ -148,17 +164,29 @@ Through surgical layout refactoring, the ecosystem achieves flawless performance
 To replicate or audit the local development environment, enforce the following operations in your terminal container:
 
 1. Clone the secure master branch repository:
-   git clone https://github.com/dedeus-lucas/shield-protocol.git
-   cd shield-protocol
+
+   ```bash
+   git clone [https://github.com/dedeus-lucas/shield-protocol-portfolio.git](https://github.com/dedeus-lucas/shield-protocol-portfolio.git)
+   cd shield-protocol-portfolio
+   ```
 
 2. Deploy the isolated dependency tree:
+
+   ```bash
    npm install
+   ```
 
 3. Initialize the local ultra-fast development server instance:
+
+   ```bash
    npm run dev
+   ```
 
 4. Compile and execute production bundle validation checks:
+
+   ```bash
    npm run build
+   ```
 
 ---
 
