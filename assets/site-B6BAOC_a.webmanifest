@@ -1,0 +1,21 @@
+{
+  "name": "Shield Protocol",
+  "short_name": "Shield",
+  "description": "Secure systems engineering portfolio focused on backend architecture, API security, DevSecOps and cloud security.",
+  "theme_color": "#0B0B12",
+  "background_color": "#0B0B12",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
