@@ -1,5 +1,3 @@
-// src/main.ts
-
 /* =========================================================
    ORQUESTRAÇÃO DE ESTILOS (VITE BUNDLER)
 ========================================================= */
@@ -21,29 +19,20 @@ interface SystemStatus {
   encryption: string;
 }
 
-/**
- * Renderiza ou atualiza o buffer de boas-vindas do terminal com base no idioma atual
- */
 const renderTerminalWelcomeMessage = (): void => {
   const translations = i18n.getText();
   
-  // 1. Procura o container de output do terminal
   const outputContainer = document.getElementById('terminal-output');
   if (outputContainer) {
-    // Limpa o conteúdo anterior para evitar duplicar linhas ao trocar de idioma
     outputContainer.innerHTML = '';
   }
 
-  // 2. Imprime as linhas traduzidas
   terminalConsole.printLine('==================================================', 'system-line');
   terminalConsole.printLine(`      ${translations.terminal.welcome}    `, 'system-line');
   terminalConsole.printLine('==================================================', 'system-line');
   terminalConsole.printLine(`${translations.terminal.help_message}\n`, 'success-line');
 };
 
-/**
- * Atualiza o placeholder do terminal baseado no idioma ativo no dicionário
- */
 const updateTerminalPlaceholder = (): void => {
   const terminalInput = document.getElementById('terminal-input') as HTMLInputElement;
   if (terminalInput) {
@@ -53,9 +42,6 @@ const updateTerminalPlaceholder = (): void => {
   }
 };
 
-/**
- * Gerencia a alternância de idiomas e a atualização visual de todos os componentes
- */
 const handleLanguageToggle = (button: HTMLButtonElement): void => {
   const currentLang = i18n.getCurrentLanguage();
   if (currentLang === 'pt-BR') {
@@ -66,16 +52,11 @@ const handleLanguageToggle = (button: HTMLButtonElement): void => {
     button.textContent = 'EN';
   }
   
-  // Sincroniza o placeholder do input do terminal
   updateTerminalPlaceholder();
   
-  // Sincroniza e re-renderiza as linhas do terminal instantaneamente
   renderTerminalWelcomeMessage();
 };
 
-/**
- * Ativa o motor utilitário de animações reativas baseadas na rolagem (scroll)
- */
 const initScrollReveal = (): void => {
   const targetSections = document.querySelectorAll('main > section, footer');
   

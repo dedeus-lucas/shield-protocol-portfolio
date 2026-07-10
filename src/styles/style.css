@@ -1,7 +1,6 @@
 /* =========================================================
     GLOBAL
 ========================================================= */
-
 html {
   scroll-behavior: smooth;
 }
@@ -67,7 +66,6 @@ img {
 /* =========================================================
     UTILITIES
 ========================================================= */
-
 .app-container {
   width: 100%;
   overflow-x: hidden;
@@ -129,7 +127,6 @@ img {
 /* =========================================================
     NAVBAR
 ========================================================= */
-
 .navbar-wrapper {
   position: fixed;
   top: 0;
@@ -303,7 +300,6 @@ img {
 /* =========================================================
     HERO
 ========================================================= */
-
 .hero {
   position: relative;
   overflow: hidden;
@@ -329,7 +325,6 @@ img {
   z-index: -1;
 }
 
-/* Localize a classe .hero-content no seu src/styles/style.css e garanta que ela fique assim: */
 .hero-content {
   display: grid;
   align-items: center;
@@ -384,7 +379,6 @@ img {
 /* =========================================================
     BUTTONS
 ========================================================= */
-
 .primary-button,
 .secondary-button {
   display: inline-flex;
@@ -415,7 +409,6 @@ img {
 /* =========================================================
     ABOUT
 ========================================================= */
-
 .about {
   position: relative;
   z-index: 2;
@@ -482,7 +475,6 @@ img {
 /* =========================================================
     JOURNEY
 ========================================================= */
-
 .journey {
   display: flex;
   flex-direction: column;
@@ -544,7 +536,6 @@ img {
 /* =========================================================
     STACK
 ========================================================= */
-
 .stack {
   display: flex;
   flex-direction: column;
@@ -626,7 +617,6 @@ img {
 /* =========================================================
     PROJECTS
 ========================================================= */
-
 .projects {
   position: relative;
 }
@@ -792,7 +782,6 @@ img {
 /* =========================================================
     FOOTER
 ========================================================= */
-
 .footer {
   position: relative;
   overflow: hidden;
@@ -910,7 +899,6 @@ img {
 /* =========================================================
     INTERACTIONS & RESPONSIVE
 ========================================================= */
-
 .primary-button:hover,
 .secondary-button:hover,
 .about-card:hover,
@@ -1062,7 +1050,6 @@ footer {
 /* =========================================================
     TERMINAL OPERATIONAL SYSTEM STYLES
 ========================================================= */
-
 .terminal-box {
   background: #06070a !important;
   border: 1px solid rgba(139, 92, 246, 0.25) !important;
@@ -1079,7 +1066,6 @@ footer {
   /* Oculta barra nativa no Firefox */
 }
 
-/* REMOVE A BARRA FANTASMA HORIZONTAL E VERTICAL EM NAVEGADORES WEBKIT (CHROME, EDGE, SAFARI) */
 .terminal-box::-webkit-scrollbar,
 #terminal-output::-webkit-scrollbar {
   display: none !important;
@@ -1089,7 +1075,6 @@ footer {
 
 #terminal-output {
   overflow-x: hidden !important;
-  /* Extermina vazamento horizontal por strings extensas */
   overflow-y: auto;
   scrollbar-width: none;
 }

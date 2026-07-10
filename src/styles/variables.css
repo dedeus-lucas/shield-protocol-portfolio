@@ -1,6 +1,5 @@
 :root {
   /* COLORS */
-
   --color-background: #06070a;
   --color-surface: rgba(17, 17, 23, 0.72);
   --color-surface-solid: #111117;
@@ -15,27 +14,22 @@
   --color-border: rgba(255, 255, 255, 0.08);
 
   /* GLOW */
-
   --glow-primary: 0 0 40px rgba(139, 92, 246, 0.35);
 
   /* SHADOWS */
-
   --shadow-soft:
     0 8px 30px rgba(0, 0, 0, 0.35);
 
   /* GLASS EFFECT */
-
   --blur-glass: blur(18px);
 
   /* BORDER RADIUS */
-
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-xl: 32px;
 
   /* SPACING */
-
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
@@ -43,10 +37,8 @@
   --space-xl: 4rem;
 
   /* TRANSITIONS */
-
   --transition-default: 0.3s ease;
 
   /* MAX WIDTH */
-
   --max-width: 1200px;
 }
