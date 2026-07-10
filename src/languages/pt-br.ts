@@ -109,6 +109,11 @@ export const ptBr: TranslationSchema = {
   terminal: {
     welcome: "SHIELD PROTOCOL OPERATIONAL CORE OS v1.0",
     help_message: "Digite 'help' para listar os protocolos de comunicação seguros.",
-    waiting: "Aguardando comando..."
+    waiting: "Aguardando comando...",
+    success: "[INSPEÇÃO CONCLUÍDA] Perímetro do ecossistema totalmente íntegro.",
+    accessDenied: "ERRO: Acesso negado",
+    invalidLang: "ERRO: Parâmetro de idioma inválido. Use 'lang en' ou 'lang pt'.",
+    shiftSuccess: "Orientação linguística do sistema alterada para Português.",
+    helpOutput: "[COMANDOS DISPONÍVEIS]\n  help        - Exibe os protocolos ativos de comando.\n  clear       - Limpa o buffer de log do console.\n  about       - Transmite uma visão geral sobre o engenheiro.\n  skills      - Varre a matriz da stack de tecnologias.\n  scan        - Executa uma inspeção simulada de perímetro.\n  lang <code细> - Altera o idioma da interface (en / pt)."
   },
 };

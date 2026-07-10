@@ -1,4 +1,3 @@
-// src/core/terminalCore.ts
 import { i18n } from '../languages/languagesManager';
 
 export interface TerminalResponse {
@@ -11,15 +10,14 @@ export interface TerminalResponse {
 export class TerminalCore {
   private readonly commandHistory: string[] = [];
 
-  /**
-   * Processa o comando inserido pelo utilizador e retorna a resposta apropriada
-   */
   public executeCommand(input: string): TerminalResponse {
     const trimmedInput = input.trim().toLowerCase();
     if (!trimmedInput) return { output: '', isError: false };
 
     this.commandHistory.push(input);
-    const texts = i18n.getText().terminal;
+    
+    const currentText = i18n.getText();
+    const texts = currentText.terminal;
 
     const parts = trimmedInput.split(' ');
     const command = parts[0];
@@ -28,7 +26,7 @@ export class TerminalCore {
     switch (command) {
       case 'help': {
         return {
-          output: `[AVAILABLE COMMANDS]\n  help        - Display active command protocols.\n  clear       - Purge terminal console buffer.\n  about       - Stream engineer professional overview.\n  skills      - Scan active technology stack matrix.\n  scan        - Execute simulated core perimeter inspection.\n  lang <code细> - Switch system interface language (en / pt).`,
+          output: texts.helpOutput,
           isError: false,
         };
       }
@@ -38,7 +36,7 @@ export class TerminalCore {
       }
 
       case 'about': {
-        const aboutText = i18n.getText().about;
+        const aboutText = currentText.about;
         return {
           output: `[SHIELD OVERVIEW]\n${aboutText.title}\n\n- ${aboutText.description1}\n- ${aboutText.description2}\n- ${aboutText.description3}`,
           isError: false,
@@ -46,7 +44,7 @@ export class TerminalCore {
       }
 
       case 'skills': {
-        const stackText = i18n.getText().stack;
+        const stackText = currentText.stack;
         return {
           output: `[TARGET STACK MATRIX]\n- ${stackText.backendTitle}: Java, Spring Boot, REST APIs\n- ${stackText.securityTitle}: API Security, Cloud Security, DevSecOps\n- ${stackText.evolutionTitle}: Systems Architecture, Observability`,
           isError: false,
@@ -54,8 +52,12 @@ export class TerminalCore {
       }
 
       case 'scan': {
+        const scanHeader = i18n.getCurrentLanguage() === 'pt-BR' 
+          ? `[INICIANDO RASTREIO DE PERÍMETRO...]\n>> Checando endpoints de API... SEGURO\n>> Inspecionando configurações Cloud... PROTEGIDO\n>> Analisando ciclo de dependências... VERIFICADO`
+          : `[BOOTING PERIMETER SCAN...]\n>> Checking API endpoints... SAFE\n>> Inspecting cloud configuration... SECURE\n>> Analyzing dependencies lifecycle... VERIFIED`;
+
         return {
-          output: `[BOOTING PERIMETER SCAN...]\n>> Checking API endpoints... SAFE\n>> Inspecting cloud configuration... SECURE\n>> Analyzing dependencies lifecycle... VERIFIED\n\n${texts.success}`,
+          output: `${scanHeader}\n\n${texts.success}`,
           isError: false,
           systemAction: 'trigger-scan',
         };
@@ -67,7 +69,7 @@ export class TerminalCore {
         } else if (arg === 'pt' || arg === 'pt-br') {
           return { output: 'Orientação linguística do sistema alterada para Português.', isError: false, systemAction: 'change-lang-pt' };
         } else {
-          return { output: 'ERROR: Invalid language parameter. Use "lang en" or "lang pt".', isError: true };
+          return { output: texts.invalidLang, isError: true };
         }
       }
 

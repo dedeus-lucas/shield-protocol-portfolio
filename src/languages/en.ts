@@ -109,6 +109,11 @@ export const en: TranslationSchema = {
   terminal: {
     welcome: "SHIELD PROTOCOL OPERATIONAL CORE OS v1.0",
     help_message: "Type 'help' to list secure communications protocols.",
-    waiting: "Awaiting command..."
+    waiting: "Awaiting command...",
+    success: "[SCAN COMPLETED] Ecosystem perimeter fully verified.",
+    accessDenied: "ERROR: Access denied",
+    invalidLang: "ERROR: Invalid language parameter. Use 'lang en' or 'lang pt'.",
+    shiftSuccess: "System linguistic orientation shifted to English.",
+    helpOutput: "[AVAILABLE COMMANDS]\n  help        - Display active command protocols.\n  clear       - Purge terminal console buffer.\n  about       - Stream engineer professional overview.\n  skills      - Scan active technology stack matrix.\n  scan        - Execute simulated core perimeter inspection.\n  lang <code细> - Switch system interface language (en / pt)."
   },
 };

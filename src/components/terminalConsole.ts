@@ -1,4 +1,3 @@
-// src/components/terminalConsole.ts
 import { TerminalCore } from '../core/terminalCore';
 import { i18n } from '../languages/languagesManager';
 
@@ -12,9 +11,6 @@ export class TerminalConsole {
     this.core = new TerminalCore();
   }
 
-  /**
-   * Acopla a infraestrutura do terminal aos elementos do HTML
-   */
   public bind(containerId: string, outputId: string, inputId: string): void {
     this.container = document.getElementById(containerId);
     this.outputBuffer = document.getElementById(outputId);
@@ -24,7 +20,6 @@ export class TerminalConsole {
       this.inputField.addEventListener('keydown', (e) => this.handleKeyDown(e));
     }
     
-    // Garante o autofocus corporativo ao clicar no contêiner pai
     this.container?.addEventListener('click', () => this.inputField?.focus());
   }
 
@@ -36,10 +31,8 @@ export class TerminalConsole {
 
     if (!rawInput.trim()) return;
 
-    // 1. Ecoa o prompt de comando (Estilo terminal real)
     this.printLine(`guest@shield-protocol:~$ ${rawInput}`, 'prompt-line');
 
-    // 2. Processa o comando delegando para o core
     const result = this.core.executeCommand(rawInput);
 
     if (result.clearTerminal) {
@@ -56,9 +49,6 @@ export class TerminalConsole {
     }
   }
 
-  /**
-   * Imprime uma linha de texto no buffer do console
-   */
   public printLine(text: string, className: string = ''): void {
     if (!this.outputBuffer) return;
 
@@ -70,7 +60,6 @@ export class TerminalConsole {
 
     this.outputBuffer.appendChild(line);
 
-    // Força a rolagem automática baseada na altura total do buffer
     this.outputBuffer.scrollTop = this.outputBuffer.scrollHeight;
   }
 
@@ -81,7 +70,6 @@ export class TerminalConsole {
   }
 
   private handleSystemAction(action: string): void {
-    // Captura o botão da navbar para manter o estado em sincronia quando alterado via terminal
     const languageButton = document.getElementById('languageToggle') as HTMLButtonElement;
 
     switch (action) {

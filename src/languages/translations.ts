@@ -1,5 +1,3 @@
-// src/languages/translations.ts
-
 export interface TranslationSchema {
   metadata: {
     title: string;
