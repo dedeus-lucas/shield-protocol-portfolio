@@ -107,8 +107,8 @@ export const ptBr: TranslationSchema = {
   },
 
   terminal: {
-    placeholder: "Aguardando comando (digite 'help')...",
-    accessDenied: "ERRO: Acesso negado. Credenciais insuficientes.",
-    success: "Operação realizada com sucesso.",
+    welcome: "SHIELD PROTOCOL OPERATIONAL CORE OS v1.0",
+    help_message: "Digite 'help' para listar os protocolos de comunicação seguros.",
+    waiting: "Aguardando comando..."
   },
 };

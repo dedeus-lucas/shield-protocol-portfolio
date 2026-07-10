@@ -97,8 +97,8 @@ export interface TranslationSchema {
     copyright: string;
   };
   terminal: {
-    placeholder: string;
-    accessDenied: string;
-    success: string;
+    welcome: string;
+    help_message: string;
+    waiting: string;
   };
-}
+};

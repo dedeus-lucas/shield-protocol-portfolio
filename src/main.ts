@@ -1,3 +1,5 @@
+// src/main.ts
+
 /* =========================================================
    ORQUESTRAÇÃO DE ESTILOS (VITE BUNDLER)
 ========================================================= */
@@ -20,6 +22,18 @@ interface SystemStatus {
 }
 
 /**
+ * Atualiza o placeholder do terminal baseado no idioma ativo
+ */
+const updateTerminalPlaceholder = (): void => {
+  const terminalInput = document.getElementById('terminal-input') as HTMLInputElement;
+  if (terminalInput) {
+    // Busca a tradução direto do gerenciador e injeta como placeholder
+    const translations = i18n.getText();
+    terminalInput.placeholder = translations.terminal?.waiting || 'Awaiting command...';
+  }
+};
+
+/**
  * Gerencia a alternância de idiomas e a atualização visual do botão correspondente
  */
 const handleLanguageToggle = (button: HTMLButtonElement): void => {
@@ -31,6 +45,9 @@ const handleLanguageToggle = (button: HTMLButtonElement): void => {
     i18n.setLanguage('pt-BR');
     button.textContent = 'EN';
   }
+  
+  // Sincroniza o placeholder do terminal imediatamente após a troca
+  updateTerminalPlaceholder();
 };
 
 /**
@@ -70,7 +87,10 @@ const initializePortfolio = (config: SystemStatus): void => {
   // 2. Acoplamento do terminal interativo
   terminalConsole.bind('terminal-container', 'terminal-output', 'terminal-input');
 
-  // 3. Orquestração da reatividade do botão de idiomas
+  // 3. Configura o placeholder inicial traduzido do terminal
+  updateTerminalPlaceholder();
+
+  // 4. Orquestração da reatividade do botão de idiomas
   const languageButton = document.getElementById('languageToggle') as HTMLButtonElement;
   if (languageButton) {
     languageButton.textContent = i18n.getCurrentLanguage() === 'pt-BR' ? 'EN' : 'PT';
@@ -79,7 +99,7 @@ const initializePortfolio = (config: SystemStatus): void => {
     });
   }
 
-  // 4. Ativa as animações de scroll reativas
+  // 5. Ativa as animações de scroll reativas
   initScrollReveal();
 
   // Mensagem operacional de boas-vindas no buffer do terminal

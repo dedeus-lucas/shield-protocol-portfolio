@@ -11,14 +11,19 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
-  /* CORREÇÃO DE INFRA: Garante estabilidade na rolagem da janela principal */
+
+  /* AJUSTE COMPLEMENTAR CROSS-BROWSER: */
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: auto;
+
+  /* O SEGREDO PARA O CHROME: Reserva o espaço da barra de rolagem de antemão.
+     Isso impede que o Chrome recalcule a largura da tela quando as animações reveal brotam,
+     eliminando o 'pulo' no recarregamento e o scroll duplo no Windows. */
+  scrollbar-gutter: stable;
 }
 
 body {
-  /* CORREÇÃO: Removido o min-height engessado que forçava a quebra com elementos reativos */
   height: auto;
   min-height: 100vh;
   text-rendering: optimizeLegibility;

@@ -329,12 +329,16 @@ img {
   z-index: -1;
 }
 
+/* Localize a classe .hero-content no seu src/styles/style.css e garanta que ela fique assim: */
 .hero-content {
   display: grid;
   align-items: center;
-  /* Garante alinhamento central vertical */
   gap: clamp(3rem, 6vw, 6rem);
   padding-top: 9rem;
+
+  /* CÁPSULA DEFINTIVA PARA O CHROME: */
+  height: auto !important;
+  min-height: auto !important;
 }
 
 .hero-text {

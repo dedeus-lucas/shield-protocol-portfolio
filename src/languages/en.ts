@@ -107,8 +107,8 @@ export const en: TranslationSchema = {
   },
 
   terminal: {
-    placeholder: "Awaiting command (type 'help')...",
-    accessDenied: "ERROR: Access denied. Insufficient credentials.",
-    success: "Operation executed successfully.",
+    welcome: "SHIELD PROTOCOL OPERATIONAL CORE OS v1.0",
+    help_message: "Type 'help' to list secure communications protocols.",
+    waiting: "Awaiting command..."
   },
 };
