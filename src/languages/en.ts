@@ -87,9 +87,12 @@ export const en: TranslationSchema = {
     label: "PROJECTS",
     title: "Real projects, technical evolution, and continuous construction.",
     description: "Systems developed under strict software engineering, performance, and secure design metrics.",
+    advocaciaPremium: {
+      desc: "Premium institutional Landing Page tailored for high-complexity corporate law. Engineered under a clean modular architecture leveraging Vite, Sass (Modern Modules), and Vanilla JavaScript. Built to eliminate Hydration Overhead, securing sub-second load times via aggressive LCP optimization and absolute universal accessibility compliance (WCAG 2.1 AA) featuring a native JavaScript Focus Trap for assistive technologies."
+    },
     vl: {
       badge: "MVP DELIVERED",
-      description: "Premium institutional platform optimized for VL Estética e Fisioterapia. Engineering focused on Core Web Vitals, extreme performance, advanced SEO, and digital accessibility (a11y).",
+      description: "Premium institutional platform optimized for VL Estética e Fisioterapia. Engineering focused on Core Web Vitals, performance extrema, advanced SEO, and digital accessibility (a11y).",
     },
     labs: {
       badge: "IN DEVELOPMENT",

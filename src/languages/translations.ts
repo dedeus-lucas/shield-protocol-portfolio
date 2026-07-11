@@ -79,6 +79,9 @@ export interface TranslationSchema {
     label: string;
     title: string;
     description: string;
+    advocaciaPremium: {
+      desc: string;
+    };
     vl: {
       badge: string;
       description: string;

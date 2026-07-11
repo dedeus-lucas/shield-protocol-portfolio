@@ -87,6 +87,9 @@ export const ptBr: TranslationSchema = {
     label: "PROJETOS",
     title: "Projetos reais, evolução técnica e construção contínua.",
     description: "Sistemas desenvolvidos sob métricas rigorosas de engenharia, performance e design seguro.",
+    advocaciaPremium: {
+      desc: "Landing Page institucional premium focada em advocacia corporativa de alta complexidade. Desenvolvida em arquitetura modular com Vite, Sass (Modern Modules) e JavaScript Vanilla. Implementação rigorosa de performance extrema eliminando o Hydration Overhead, otimização severa de LCP e conformidade de acessibilidade universal (WCAG 2.1 AA) com Focus Trap nativo para navegação assistida."
+    },
     vl: {
       badge: "MVP ENTREGUE",
       description: "Plataforma institucional premium otimizada para a VL Estética e Fisioterapia. Engenharia focada em Core Web Vitals, performance extrema, SEO avançado e acessibilidade digital (a11y).",

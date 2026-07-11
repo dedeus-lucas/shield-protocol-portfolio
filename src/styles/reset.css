@@ -10,23 +10,27 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 
-  /* AJUSTE COMPLEMENTAR CROSS-BROWSER: */
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
 
-  /* O SEGREDO PARA O CHROME: Reserva o espaço da barra de rolagem de antemão.
-     Isso impede que o Chrome recalcule a largura da tela quando as animações reveal brotam,
-     eliminando o 'pulo' no recarregamento e o scroll duplo no Windows. */
   scrollbar-gutter: stable;
 }
 
 body {
-  height: auto;
+  width: 100%;
   min-height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
   overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#app,
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible !important;
 }
 
 img,
