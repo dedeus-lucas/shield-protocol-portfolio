@@ -82,6 +82,10 @@ export interface TranslationSchema {
     advocaciaPremium: {
       desc: string;
     };
+    sentinelVault: {
+      badge: string;
+      desc: string;
+    };
     vl: {
       badge: string;
       description: string;

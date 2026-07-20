@@ -90,6 +90,10 @@ export const ptBr: TranslationSchema = {
     advocaciaPremium: {
       desc: "Landing Page institucional premium focada em advocacia corporativa de alta complexidade. Desenvolvida em arquitetura modular com Vite, Sass (Modern Modules) e JavaScript Vanilla. Implementação rigorosa de performance extrema eliminando o Hydration Overhead, otimização severa de LCP e conformidade de acessibilidade universal (WCAG 2.1 AA) com Focus Trap nativo para navegação assistida."
     },
+    sentinelVault: {
+      badge: "DEVSECOPS",
+      desc: "O Sentinel Vault é uma API REST segura desenvolvida para aplicar práticas modernas de engenharia backend, segurança de aplicações e DevSecOps. O projeto integra autenticação, criptografia, autorização segura, observabilidade, análise automatizada de segurança e CI/CD em uma arquitetura inspirada em produção."
+    },
     vl: {
       badge: "MVP ENTREGUE",
       description: "Plataforma institucional premium otimizada para a VL Estética e Fisioterapia. Engenharia focada em Core Web Vitals, performance extrema, SEO avançado e acessibilidade digital (a11y).",
