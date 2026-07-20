@@ -277,26 +277,6 @@ img {
     1px solid rgba(139, 92, 246, .32);
 }
 
-@media (max-width: 980px) {
-  .navbar {
-    padding:
-      .9rem 1.2rem;
-  }
-
-  .navbar-links {
-    display: none;
-  }
-
-  .navbar-subtitle {
-    display: none;
-  }
-
-  .navbar-logo {
-    width: 48px;
-    height: 48px;
-  }
-}
-
 /* =========================================================
     HERO
 ========================================================= */
@@ -330,8 +310,6 @@ img {
   align-items: center;
   gap: clamp(3rem, 6vw, 6rem);
   padding-top: 9rem;
-
-  /* CÁPSULA DEFINTIVA PARA O CHROME: */
   height: auto !important;
   min-height: auto !important;
 }
@@ -369,7 +347,6 @@ img {
   border: 1px solid rgba(139, 92, 246, 0.12);
   display: flex;
   flex-direction: column;
-  /* CORREÇÃO DO ENCAIXE: Removemos qualquer esticamento forçado do grid pai */
   height: fit-content;
   align-self: center;
   width: 100%;
@@ -754,31 +731,6 @@ img {
   margin-top: 1rem;
 }
 
-.project-link {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  padding:
-    .9rem 1.2rem;
-  border-radius:
-    var(--radius-md);
-  background:
-    rgba(255, 255, 255, .03);
-  border:
-    1px solid rgba(255, 255, 255, .08);
-  color:
-    var(--color-text-primary);
-  transition:
-    var(--transition-default);
-}
-
-.project-link:hover {
-  transform:
-    translateY(-3px);
-  border:
-    1px solid rgba(139, 92, 246, .28);
-}
-
 /* =========================================================
     FOOTER
 ========================================================= */
@@ -899,36 +851,6 @@ img {
 /* =========================================================
     INTERACTIONS & RESPONSIVE
 ========================================================= */
-.primary-button:hover,
-.secondary-button:hover,
-.about-card:hover,
-.journey-card:hover,
-.stack-card:hover,
-.projects-showcase:hover {
-  transform:
-    translateY(-6px);
-}
-
-.primary-button:hover {
-  box-shadow:
-    0 12px 30px rgba(139, 92, 246, .35);
-}
-
-.secondary-button:hover,
-.about-card:hover,
-.journey-card:hover,
-.stack-card:hover,
-.projects-showcase:hover {
-  border:
-    1px solid rgba(139, 92, 246, .28);
-}
-
-.stack-items span:hover {
-  transform: translateY(-3px);
-  background: rgba(139, 92, 246, 0.08);
-  border: 1px solid rgba(139, 92, 246, 0.24);
-}
-
 .about-card:hover,
 .journey-card:hover,
 .stack-card:hover,
@@ -1060,10 +982,8 @@ footer {
   position: relative;
   overflow: hidden;
   height: auto;
-  /* Altera de 100% para auto para encolher */
   min-height: 200px;
   scrollbar-width: none;
-  /* Oculta barra nativa no Firefox */
 }
 
 .terminal-box::-webkit-scrollbar,

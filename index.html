@@ -99,7 +99,7 @@
               <div class="navbar-brand">
                 <img
                   src="./src/assets/logos/shield-symbol.png"
-                  alt="Shield Protocol Symbol"
+                  alt="Shield Protocol logo"
                   class="navbar-logo"
                 />
 
@@ -210,7 +210,7 @@
               <div class="about-photo glass-card">
                 <img
                   src="./src/assets/images/profile.webp"
-                  alt="Lucas Silva de Deus, foto pessoal."
+                  alt="Imagem de Lucas Silva de Deus"
                   width="420"
                   height="420"
                   loading="lazy"
@@ -410,11 +410,71 @@
               </div>
 
               <div class="projects-list">
+                <article class="projects-showcase reverse glass-card">
+                  <div class="projects-image">
+                    <img
+                      src="./src/assets/projects/sentinel-vault-bg.webp"
+                      alt="Sentinel Vault secure REST API architecture"
+                      loading="lazy"
+                      width="900"
+                      height="700"
+                    />
+                  </div>
+
+                  <div class="projects-content">
+                    <span class="project-badge">DEVSECOPS</span>
+
+                    <h3>Sentinel Vault</h3>
+
+                    <p
+                      class="projects-description"
+                      data-i18n="projects.sentinelVault.desc"
+                    >
+                      Sentinel Vault is a secure REST API developed to apply
+                      modern backend engineering, application security and
+                      DevSecOps practices. The project integrates
+                      authentication, encryption, secure authorization,
+                      observability, automated security analysis and CI/CD into
+                      a production-inspired architecture.
+                    </p>
+
+                    <div class="projects-stack">
+                      <span>Java 21</span>
+                      <span>Spring Boot 3.5</span>
+                      <span>Spring Security</span>
+                      <span>JWT</span>
+                      <span>PostgreSQL</span>
+                      <span>Flyway</span>
+                      <span>AES-256-GCM</span>
+                      <span>BCrypt</span>
+                      <span>Bucket4j</span>
+                      <span>Micrometer</span>
+                      <span>Docker</span>
+                      <span>GitHub Actions</span>
+                      <span>Semgrep</span>
+                      <span>Snyk</span>
+                      <span>TruffleHog</span>
+                      <span>DevSecOps</span>
+                    </div>
+
+                    <div class="projects-links">
+                      <a
+                        href="https://github.com/dedeus-lucas/sentinel-vault"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="primary-button"
+                      >
+                        Repository
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
                 <article class="projects-showcase glass-card">
                   <div class="projects-image">
                     <img
-                      src="./src/assets/projects/advocacia-premium.webp"
-                      alt="Advocacia Premium Asset Showcase"
+                      src="./src/assets/projects/advocacia-premium-bg.webp"
+                      alt="Advocacia Premium institutional landing page"
                       loading="lazy"
                       width="900"
                       height="700"
@@ -455,13 +515,26 @@
                   </div>
                 </article>
 
-                <article class="projects-showcase projects-reverse glass-card">
+                <article class="projects-showcase reverse glass-card">
+                  <div class="projects-image">
+                    <img
+                      src="./src/assets/projects/vl-estetica-bg.webp"
+                      alt="VL Estética & Fisioterapia healthcare web platform"
+                      loading="lazy"
+                      width="900"
+                      height="700"
+                    />
+                  </div>
+
                   <div class="projects-content">
                     <span class="project-badge" data-i18n="projects.vl.badge">
                       MVP ENTREGUE
                     </span>
                     <h3>Healthcare Web Platform</h3>
-                    <p data-i18n="projects.vl.description">
+                    <p
+                      class="projects-description"
+                      data-i18n="projects.vl.description"
+                    >
                       Landing page institucional premium para a empresa VL
                       Estética & Fisioterapia, com foco em experiência,
                       performance e acessibilidade.
@@ -473,7 +546,7 @@
                       <span>PHP</span>
                       <span>WhatsApp</span>
                     </div>
-                    <div class="project-links">
+                    <div class="projects-links">
                       <a
                         href="https://dedeus-lucas.github.io/vl-estetica-fisio-static/"
                         target="_blank"
@@ -500,23 +573,13 @@
                       </a>
                     </div>
                   </div>
-
-                  <div class="projects-image">
-                    <img
-                      src="./src/assets/projects/vl-estetica-card.webp"
-                      alt="VL Estética Project"
-                      loading="lazy"
-                      width="900"
-                      height="700"
-                    />
-                  </div>
                 </article>
 
                 <article class="projects-showcase glass-card">
                   <div class="projects-image">
                     <img
-                      src="./src/assets/projects/projects-labs-background.webp"
-                      alt="Shield Labs"
+                      src="./src/assets/projects/projects-labs-bg.webp"
+                      alt="Shield Protocol Labs backend and cybersecurity laboratory"
                       loading="lazy"
                       width="900"
                       height="700"
@@ -528,7 +591,10 @@
                       EM EVOLUÇÃO
                     </span>
                     <h3>Shield Protocol Labs</h3>
-                    <p data-i18n="projects.labs.description">
+                    <p
+                      class="projects-description"
+                      data-i18n="projects.labs.description"
+                    >
                       Laboratórios voltados para backend, APIs seguras,
                       observabilidade, arquitetura e DevSecOps.
                     </p>
@@ -550,7 +616,7 @@
           <div class="footer-background">
             <img
               src="./src/assets/backgrounds/footer-cyber-city.webp"
-              alt="Cyber City Atmosphere"
+              alt="Cyberpunk-inspired city skyline at night"
               loading="lazy"
               width="1920"
               height="1080"
